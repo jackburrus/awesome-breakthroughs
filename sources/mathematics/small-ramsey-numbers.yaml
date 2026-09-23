@@ -1,0 +1,24 @@
+id: small-ramsey-numbers
+name: Small Ramsey Numbers (dynamic survey DS1)
+url: https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS1
+maintainer: Stanisław Radziszowski
+description: Dynamic survey of all known nontrivial values and bounds for small graph, hypergraph and multicolor Ramsey numbers, with references.
+field: mathematics
+subfield: [combinatorics, graph-theory]
+granularity: record-table
+size:
+  note: Revision dated 2026-04-24.
+  as_of: 2026-09-23
+verification: [bound, review]
+verifier_access: none
+status_tracking: per-problem
+submission: [publish-then-notify]
+access: open
+last_updated: 2026-04-24
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: medium
+  rationale: A new lower bound is a checkable coloring, but upper bounds usually need long proofs or heavy computation.
+contamination_risk: low
+notes: Published in The Electronic Journal of Combinatorics since 1994. Results enter the survey after publication.

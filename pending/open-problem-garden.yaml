@@ -1,0 +1,8 @@
+id: open-problem-garden
+name: Open Problem Garden
+url: http://www.openproblemgarden.org/
+field: mathematics
+reason: Unchecked (U) in the research, which also says it is likely unmaintained.
+to_check:
+  - Whether the site is online and still accepts edits.
+  - Date of the most recent change, to set lifecycle (likely stale).

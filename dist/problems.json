@@ -1,0 +1,1897 @@
+{
+  "schema_version": "1",
+  "data_as_of": "2026-09-23",
+  "license": "CC0-1.0",
+  "homepage": "https://github.com/jackburrus/awesome-breakthroughs",
+  "sources": [
+    {
+      "id": "ai-has-taste",
+      "name": "AI Has Taste",
+      "url": "https://github.com/ArtificialZeng/AI-Has-Taste",
+      "maintainer": "ArtificialZeng",
+      "description": "Self-published archive of research manuscripts produced by AI agents on open math problems, including proofs, disproofs and AI-proposed conjectures.",
+      "field": "mathematics",
+      "granularity": "meta-list",
+      "size": {
+        "total": 453,
+        "unit": "manuscripts",
+        "as_of": "2026-09-23",
+        "note": "README count. The repository description says 200+ open problems."
+      },
+      "verification": [
+        "self-reported"
+      ],
+      "verifier_access": "none",
+      "status_tracking": "none",
+      "submission": [
+        "pr"
+      ],
+      "access": "open",
+      "license": "None stated",
+      "last_updated": "2026-09-16",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "low",
+        "rationale": "An archive of claims, not a problem set; each claim needs independent checking."
+      },
+      "contamination_risk": "high",
+      "notes": "None of the claims here are independently verified. Treat every result as claimed until an upstream source accepts it.",
+      "file": "sources/mathematics/ai-has-taste.yaml"
+    },
+    {
+      "id": "alphaevolve-problems",
+      "name": "AlphaEvolve repository of problems",
+      "url": "https://github.com/google-deepmind/alphaevolve_repository_of_problems",
+      "alt_urls": [
+        "https://google-deepmind.github.io/alphaevolve_repository_of_problems/"
+      ],
+      "maintainer": "Google DeepMind (Georgiev, Gómez-Serrano, Tao, Wagner)",
+      "description": "A page per problem, with Colab notebooks holding the prompt, verification code, starting program and evolved program.",
+      "field": "mathematics",
+      "subfield": [
+        "analysis-and-inequalities",
+        "combinatorics",
+        "geometry-and-packing"
+      ],
+      "granularity": "record-table",
+      "size": {
+        "total": 67,
+        "unit": "problems",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "score",
+        "bound"
+      ],
+      "verifier_access": "public-code",
+      "status_tracking": "per-problem",
+      "submission": [
+        "pr",
+        "email"
+      ],
+      "access": "open",
+      "license": "Apache-2.0 (code); CC-BY-4.0 (other materials)",
+      "ai_records": [
+        {
+          "summary": "AlphaEvolve was run on all 67 problems, and the prompts, verification code and evolved programs were published for many of them.",
+          "date": "2025-11-05",
+          "system": "AlphaEvolve",
+          "level": "machine-checked",
+          "autonomy": "human+ai",
+          "disclosure": [
+            "denominator",
+            "prompts"
+          ],
+          "evidence": [
+            "https://arxiv.org/abs/2511.02864",
+            "https://github.com/google-deepmind/alphaevolve_repository_of_problems"
+          ],
+          "notes": "Tao and Gómez-Serrano supervised problem selection, review and analysis. The repository's status graphic shows how each problem went."
+        }
+      ],
+      "last_updated": "2026-07-11",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "high",
+        "rationale": "Each notebook ships a scoring function, so a better construction can be checked at once."
+      },
+      "contamination_risk": "low",
+      "file": "sources/mathematics/alphaevolve-problems.yaml"
+    },
+    {
+      "id": "alphaproof-nexus-results",
+      "name": "AlphaProof Nexus results",
+      "url": "https://github.com/google-deepmind/alphaproof-nexus-results",
+      "maintainer": "Google DeepMind",
+      "description": "Lean proofs found by AlphaProof Nexus, prose proofs, and the full list of attempted Erdős and OEIS problems, including the unsolved ones.",
+      "field": "mathematics",
+      "subfield": [
+        "formal-statements",
+        "combinatorics",
+        "number-theory"
+      ],
+      "granularity": "record-table",
+      "size": {
+        "total": 845,
+        "solved": 53,
+        "unit": "problems attempted",
+        "as_of": "2026-06-08",
+        "note": "353 Erdős problems (9 solved) and 492 OEIS conjectures (44 solved), per arXiv 2605.22763."
+      },
+      "verification": [
+        "formal"
+      ],
+      "proof_assistant": "lean4",
+      "verifier_access": "public-code",
+      "status_tracking": "per-problem",
+      "submission": [
+        "closed"
+      ],
+      "access": "open",
+      "license": "Apache-2.0 (code); CC-BY-4.0 (other materials)",
+      "ai_records": [
+        {
+          "summary": "AlphaProof Nexus proved 44 of 492 attempted OEIS conjectures in Lean.",
+          "date": "2026-05-21",
+          "system": "AlphaProof Nexus",
+          "level": "machine-checked",
+          "autonomy": "autonomous",
+          "disclosure": [
+            "denominator"
+          ],
+          "evidence": [
+            "https://arxiv.org/abs/2605.22763",
+            "https://github.com/google-deepmind/alphaproof-nexus-results"
+          ]
+        }
+      ],
+      "last_updated": "2026-07-21",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "high",
+        "rationale": "Reference set. The unsolved attempted problems are formalized and ready for another attempt."
+      },
+      "contamination_risk": "low",
+      "notes": "A reference, not a submission venue. It is listed because it publishes the attempted set as well as the successes.",
+      "file": "sources/mathematics/alphaproof-nexus-results.yaml"
+    },
+    {
+      "id": "busy-beaver-challenge",
+      "name": "Busy Beaver Challenge",
+      "url": "https://bbchallenge.org/",
+      "alt_urls": [
+        "https://wiki.bbchallenge.org/wiki/Main_Page"
+      ],
+      "maintainer": "bbchallenge community",
+      "description": "Collaborative project to decide halting for small Turing machines. BB(5) = 47,176,870 was proved in Rocq; BB(6) holdouts remain.",
+      "field": "mathematics",
+      "subfield": [
+        "logic-and-computability"
+      ],
+      "granularity": "database",
+      "size": {
+        "total": 855,
+        "open": 855,
+        "unit": "BB(6) holdout machines, up to equivalence",
+        "as_of": "2026-09-15",
+        "note": "1,802 machines without reducing by equivalence, per the wiki's BB(6) page in mid-September 2026."
+      },
+      "verification": [
+        "formal",
+        "bound"
+      ],
+      "proof_assistant": "rocq",
+      "verifier_access": "public-code",
+      "status_tracking": "per-problem",
+      "submission": [
+        "forum",
+        "pr"
+      ],
+      "access": "open",
+      "last_updated": "2026-09-23",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Deciders can clear many machines automatically, but the remaining cryptids are Collatz-like and mathematically hard."
+      },
+      "contamination_risk": "none",
+      "notes": "Work happens on Discord, the forum, the wiki and GitHub. The research that seeded this list also placed Busy Beaver under computer science.",
+      "file": "sources/mathematics/busy-beaver-challenge.yaml"
+    },
+    {
+      "id": "cayleypy-pancake",
+      "name": "CayleyPy Pancake sorting",
+      "url": "https://www.kaggle.com/competitions/CayleyPy-pancake",
+      "maintainer": "CayleyPy project (Kaggle competition hosted by Stanislav Diener)",
+      "description": "Kaggle community competition to find shorter prefix-reversal (pancake) sorting paths, that is, shorter paths in a Cayley graph.",
+      "field": "mathematics",
+      "subfield": [
+        "combinatorics",
+        "algebra-and-group-theory"
+      ],
+      "granularity": "competition",
+      "size": {
+        "note": "One competition set of permutations to sort; see the Kaggle data tab.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "score"
+      ],
+      "verifier_access": "public-service",
+      "status_tracking": "leaderboard",
+      "submission": [
+        "leaderboard-upload"
+      ],
+      "access": "account",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "high",
+        "rationale": "Scoring is automatic (shorter solutions score better), and the organizers invite AI methods, including LLMs."
+      },
+      "contamination_risk": "low",
+      "notes": "Linked from the Optimization Constants related-sites list. Needs a Kaggle account.",
+      "file": "sources/mathematics/cayleypy-pancake.yaml"
+    },
+    {
+      "id": "einstein-arena",
+      "name": "EinsteinArena",
+      "url": "https://einsteinarena.com/",
+      "alt_urls": [
+        "https://github.com/vinid/einstein-arena",
+        "https://arxiv.org/abs/2606.10402"
+      ],
+      "maintainer": "Federico Bianchi, Yongchan Kwon, Aneesh Pappu, James Zou and collaborators",
+      "description": "Agent-native platform with open math construction problems, a public Python verifier per problem, live leaderboards and discussion threads.",
+      "field": "mathematics",
+      "subfield": [
+        "geometry-and-packing",
+        "combinatorics",
+        "analysis-and-inequalities"
+      ],
+      "granularity": "platform",
+      "size": {
+        "total": 29,
+        "unit": "problems",
+        "as_of": "2026-09-23",
+        "note": "Count from the public /api/problems endpoint."
+      },
+      "verification": [
+        "score",
+        "bound"
+      ],
+      "verifier_access": "public-service",
+      "status_tracking": "leaderboard",
+      "submission": [
+        "api"
+      ],
+      "access": "account",
+      "license": "MIT (platform code)",
+      "ai_records": [
+        {
+          "summary": "Agents on the platform found 12 new state-of-the-art results by May 2026, including raising the kissing number lower bound in dimension 11 from 593 to 604.",
+          "date": "2026-06-09",
+          "system": "Many independent agents",
+          "level": "machine-checked",
+          "autonomy": "autonomous",
+          "evidence": [
+            "https://arxiv.org/abs/2606.10402"
+          ],
+          "notes": "The paper credits a sequence of submissions and discussion among agents rather than a single run."
+        }
+      ],
+      "last_updated": "2026-09-22",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "high",
+        "rationale": "Solutions are JSON checked by a public verifier, and agents can register and submit through the API."
+      },
+      "contamination_risk": "low",
+      "agent_interfaces": [
+        "https://einsteinarena.com/skill.md",
+        "https://einsteinarena.com/api/problems"
+      ],
+      "notes": "Agents register through a proof-of-work step. Run agents in a sandbox; they are expected to execute code locally.",
+      "file": "sources/mathematics/einstein-arena.yaml"
+    },
+    {
+      "id": "erdos-problems",
+      "name": "Erdős Problems",
+      "url": "https://www.erdosproblems.com/",
+      "maintainer": "Thomas Bloom",
+      "description": "Database of problems posed by Paul Erdős, with a status for each problem, a per-problem forum and Lean links where formalized.",
+      "field": "mathematics",
+      "subfield": [
+        "combinatorics",
+        "number-theory",
+        "graph-theory"
+      ],
+      "granularity": "database",
+      "size": {
+        "total": 1221,
+        "solved": 586,
+        "unit": "problems",
+        "as_of": "2026-09-23",
+        "note": "Homepage count. The OPEN -> SOLVED feed records when the site changed a status, not when the problem was solved."
+      },
+      "verification": [
+        "review",
+        "formal"
+      ],
+      "proof_assistant": "lean4",
+      "verifier_access": "none",
+      "status_tracking": "per-problem",
+      "submission": [
+        "forum"
+      ],
+      "access": "open",
+      "license": "Site content; no open license stated",
+      "ai_records": [
+        {
+          "summary": "Erdős #728 answered by Kevin Barreto and Liam Price using GPT-5.2 Pro, with the proof checked by Harmonic's Aristotle. The site lists it as PROVED (LEAN).",
+          "date": "2026-01-04",
+          "system": "GPT-5.2 Pro; Harmonic Aristotle",
+          "level": "source-accepted",
+          "autonomy": "human+ai",
+          "evidence": [
+            "https://www.erdosproblems.com/728",
+            "https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803/"
+          ],
+          "notes": "Quanta reports an earlier claim by the same group, on problem 333, was withdrawn because Erdős had solved it in 1977."
+        },
+        {
+          "summary": "Aletheia, a Gemini-based agent, was run on 700 problems marked open; the authors report 5 novel autonomous solutions and 8 problems already solved in the literature.",
+          "date": "2026-01-29",
+          "system": "Aletheia (Gemini Deep Think)",
+          "level": "claimed",
+          "autonomy": "autonomous",
+          "disclosure": [
+            "denominator"
+          ],
+          "evidence": [
+            "https://arxiv.org/abs/2601.22401"
+          ],
+          "notes": "The paper calls its method semi-autonomous; human experts judged correctness and novelty. The count of autonomous solutions was revised in later versions of the paper."
+        },
+        {
+          "summary": "AlphaProof Nexus resolved 9 of 353 open Erdős problems it attempted, with Lean proofs and the full attempted list published.",
+          "date": "2026-05-21",
+          "system": "AlphaProof Nexus",
+          "level": "machine-checked",
+          "autonomy": "autonomous",
+          "disclosure": [
+            "denominator",
+            "cost"
+          ],
+          "evidence": [
+            "https://arxiv.org/abs/2605.22763",
+            "https://github.com/google-deepmind/alphaproof-nexus-results"
+          ]
+        },
+        {
+          "summary": "Erdős #90, the unit distance conjecture, disproved by an internal OpenAI model. The site lists it as DISPROVED (LEAN).",
+          "date": "2026-05-20",
+          "system": "Internal OpenAI model",
+          "level": "source-accepted",
+          "autonomy": "unknown",
+          "evidence": [
+            "https://www.erdosproblems.com/90",
+            "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+          ],
+          "notes": "Epoch AI reports the Lean formalization ran to about 1.2 million lines, against an 18-page natural-language proof."
+        },
+        {
+          "summary": "Erdős #146, #180 and #183 resolved by an internal OpenAI model as part of the ten Astra results; the site lists them as verified in Lean.",
+          "date": "2026-08-01",
+          "system": "OpenAI Astra (pre-release)",
+          "level": "source-accepted",
+          "autonomy": "unknown",
+          "evidence": [
+            "https://www.erdosproblems.com/183",
+            "https://www.erdosproblems.com/146",
+            "https://github.com/openai/ten-proofs"
+          ],
+          "notes": "See ai-records/openai-astra-ten-results.yaml. The credit dispute over that bundle concerns other results in it, not these three problems."
+        }
+      ],
+      "last_updated": "2026-09-12",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Many problems are elementary to state and some fall to modest effort, but status changes need a human editor."
+      },
+      "contamination_risk": "low",
+      "agent_interfaces": [
+        "https://github.com/google-deepmind/formal-conjectures"
+      ],
+      "notes": "The forum has dedicated threads for AI contributions. Bloom estimated that 3 to 5 problems of FrontierMath Erdős calibre had been solved by AI as of August 2026 (Epoch AI).",
+      "file": "sources/mathematics/erdos-problems.yaml"
+    },
+    {
+      "id": "formal-conjectures",
+      "name": "Formal Conjectures",
+      "url": "https://github.com/google-deepmind/formal-conjectures",
+      "maintainer": "Google DeepMind and contributors",
+      "description": "Lean 4 statements of open and solved conjectures from Erdős Problems, OEIS, Wikipedia, MathOverflow and papers, tagged by status.",
+      "field": "mathematics",
+      "subfield": [
+        "formal-statements"
+      ],
+      "granularity": "database",
+      "size": {
+        "total": 2615,
+        "open": 1029,
+        "solved": 836,
+        "unit": "formal statements",
+        "as_of": "2026-05-13",
+        "note": "Counts from the paper (arXiv 2605.13171). The repository grows weekly."
+      },
+      "verification": [
+        "formal"
+      ],
+      "proof_assistant": "lean4",
+      "verifier_access": "public-code",
+      "status_tracking": "per-problem",
+      "submission": [
+        "issue",
+        "pr"
+      ],
+      "access": "open",
+      "license": "Apache-2.0",
+      "last_updated": "2026-09-23",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "high",
+        "rationale": "Statements are machine-readable and a proof is checked by lake build, but a proof can still target a misformalized statement."
+      },
+      "contamination_risk": "none",
+      "agent_interfaces": [
+        "https://github.com/google-deepmind/formal-conjectures"
+      ],
+      "notes": "Status is recorded with the @[category] attribute (research open or research solved). Statements are reviewed by people, and the maintainers warn that some may be misformalized.",
+      "file": "sources/mathematics/formal-conjectures.yaml"
+    },
+    {
+      "id": "frontiermath-erdos",
+      "name": "FrontierMath Erdős",
+      "url": "https://epoch.ai/latest/announcing-frontiermath-erdos",
+      "alt_urls": [
+        "https://arxiv.org/abs/2609.25050"
+      ],
+      "maintainer": "Epoch AI with Thomas Bloom",
+      "description": "68 significant Erdős problems, open as of August 2026 and chosen by Bloom, formalized in Lean. Each attempt has a fixed budget.",
+      "field": "mathematics",
+      "subfield": [
+        "combinatorics",
+        "number-theory"
+      ],
+      "granularity": "benchmark",
+      "size": {
+        "total": 68,
+        "unit": "problems",
+        "as_of": "2026-09-06",
+        "note": "Chosen from 652 open problems. 50 statements come from Formal Conjectures and 18 were formalized with AI help and are awaiting expert review."
+      },
+      "verification": [
+        "formal"
+      ],
+      "proof_assistant": "lean4",
+      "verifier_access": "public-code",
+      "status_tracking": "per-problem",
+      "submission": [
+        "self-run"
+      ],
+      "access": "open",
+      "license": "See the LeanOpenProblems repository (MIT)",
+      "ai_records": [
+        {
+          "summary": "In the benchmark run, a pre-release GPT-6 Astra solved 2 of 68 problems (disproved #74, proved #126) within $300 per problem; four other models solved none.",
+          "date": "2026-09-01",
+          "system": "GPT-6 Astra (pre-release)",
+          "level": "source-accepted",
+          "autonomy": "autonomous",
+          "disclosure": [
+            "denominator",
+            "cost"
+          ],
+          "evidence": [
+            "https://epoch.ai/latest/announcing-frontiermath-erdos",
+            "https://arxiv.org/abs/2609.25050"
+          ],
+          "notes": "Proofs are checked with the Lean FRO's Comparator. Erdős Problems changed #74 and #126 to solved on 2026-09-03."
+        }
+      ],
+      "last_updated": "2026-09-06",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "low",
+        "rationale": "Chosen for significance and difficulty. A solution also has to be formalized in Lean, which can be a large project on its own."
+      },
+      "contamination_risk": "low",
+      "agent_interfaces": [
+        "https://github.com/epoch-research/LeanOpenProblems"
+      ],
+      "file": "sources/mathematics/frontiermath-erdos.yaml"
+    },
+    {
+      "id": "frontiermath-open-problems",
+      "name": "FrontierMath: Open Problems",
+      "url": "https://epoch.ai/frontiermath/open-problems",
+      "maintainer": "Epoch AI",
+      "description": "Unsolved research problems with bespoke programmatic verifiers, tiered by significance from moderately interesting to breakthrough.",
+      "field": "mathematics",
+      "subfield": [
+        "number-theory",
+        "combinatorics",
+        "arithmetic-geometry"
+      ],
+      "granularity": "benchmark",
+      "size": {
+        "total": 49,
+        "open": 41,
+        "solved": 8,
+        "unit": "problems",
+        "as_of": "2026-09-23",
+        "note": "4 marked Solved (AI) and 4 Solved (human + AI). Expanded to 50 on 2026-07-31, one removed on 2026-09-16. Problems are added and removed over time."
+      },
+      "verification": [
+        "score"
+      ],
+      "verifier_access": "paid",
+      "status_tracking": "per-problem",
+      "submission": [
+        "form"
+      ],
+      "access": "open",
+      "ai_records": [
+        {
+          "summary": "The Core in Approval-Based Committee Elections (a Major advance problem) solved by Becker, Greger and Peters with GPT-6 Astra in a long interactive session.",
+          "date": "2026-09-16",
+          "system": "GPT-6 Astra",
+          "level": "source-accepted",
+          "autonomy": "human+ai",
+          "evidence": [
+            "https://epoch.ai/frontiermath/open-problems/committee-election"
+          ],
+          "notes": "The authors credit the main idea and proof to the model. Epoch marks it human + AI because the model did not solve it from a simple prompt. The date is when Epoch published the human + AI label."
+        },
+        {
+          "summary": "Hadamard matrix of order 668 solved, reported by an Anthropic researcher crediting three humans and Claude.",
+          "date": "2026-08-12",
+          "system": "Claude (internal Anthropic model)",
+          "level": "source-accepted",
+          "autonomy": "human+ai",
+          "evidence": [
+            "https://epoch.ai/frontiermath/open-problems/hadamard"
+          ],
+          "notes": "First marked solved by AI on 2026-08-12, then labelled human + AI under the 2026-09-16 policy change."
+        }
+      ],
+      "last_updated": "2026-09-16",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Problems are public, but only buyers of verifier access can check solutions themselves."
+      },
+      "contamination_risk": "none",
+      "notes": "Verifier access is sold; Epoch says OpenAI is the only buyer so far. Since 2026-09-16 Epoch labels a problem human + AI when AI was instrumental but did not solve it alone, and suggests counting these as AI solutions when a binary is needed.",
+      "file": "sources/mathematics/frontiermath-open-problems.yaml"
+    },
+    {
+      "id": "game-of-sloanes",
+      "name": "Game of Sloanes",
+      "url": "https://github.com/gnikylime/GameofSloanes",
+      "maintainer": "John Jasper, Emily J. King and Dustin G. Mixon",
+      "description": "Leaderboard of best known packings of lines in complex projective space (Grassmannian frames), with open conjectures on optimality.",
+      "field": "mathematics",
+      "subfield": [
+        "geometry-and-packing"
+      ],
+      "granularity": "record-table",
+      "size": {
+        "note": "Packings of n vectors in dimension d for 2 <= d <= 7 and d+2 <= n <= 49, plus sporadic cases.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "bound"
+      ],
+      "verifier_access": "none",
+      "status_tracking": "per-problem",
+      "submission": [
+        "pr"
+      ],
+      "access": "open",
+      "license": "CC-BY-4.0",
+      "last_updated": "2026-04-28",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "high",
+        "rationale": "A new packing only has to beat the listed coherence in the eighth decimal place, which is easy to check."
+      },
+      "contamination_risk": "low",
+      "notes": "Submit a text file of vector coordinates by pull request to the SubmittedPackings directory.",
+      "file": "sources/mathematics/game-of-sloanes.yaml"
+    },
+    {
+      "id": "horizonmath",
+      "name": "HorizonMath",
+      "url": "https://github.com/ewang26/HorizonMath",
+      "alt_urls": [
+        "https://arxiv.org/abs/2603.15617",
+        "https://ewang26.github.io/HorizonMath/"
+      ],
+      "maintainer": "Erik Y. Wang et al. (Oxford, Harvard, Princeton, Ellison Institute)",
+      "description": "Mostly unsolved problems in computational and applied mathematics, each with an automatic verifier or best-known baseline.",
+      "field": "mathematics",
+      "subfield": [
+        "combinatorics",
+        "number-theory",
+        "discrete-geometry"
+      ],
+      "granularity": "benchmark",
+      "size": {
+        "total": 136,
+        "unit": "problems",
+        "as_of": "2026-09-23",
+        "note": "README count across 8 domains; the paper (v2, 2026-09-10) describes 113. Solvability level 0 problems are calibration items with known answers."
+      },
+      "verification": [
+        "score",
+        "bound"
+      ],
+      "verifier_access": "public-code",
+      "status_tracking": "per-problem",
+      "submission": [
+        "self-run"
+      ],
+      "access": "open",
+      "license": "None stated",
+      "ai_records": [
+        {
+          "summary": "The authors report six novel solutions that resolve open questions or improve best-known results, three each from GPT-5.4 Pro and GPT-5.6 Sol.",
+          "date": "2026-09-10",
+          "system": "GPT-5.4 Pro; GPT-5.6 Sol",
+          "level": "claimed",
+          "autonomy": "unknown",
+          "evidence": [
+            "https://arxiv.org/abs/2603.15617"
+          ]
+        }
+      ],
+      "last_updated": "2026-09-09",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "high",
+        "rationale": "Chosen so that finding a solution is hard but checking one is cheap."
+      },
+      "contamination_risk": "none",
+      "notes": "Some validators need SageMath.",
+      "file": "sources/mathematics/horizonmath.yaml"
+    },
+    {
+      "id": "leaps-in-bounds",
+      "name": "Leaps in Bounds",
+      "url": "https://leapsinbounds.org/",
+      "maintainer": "Daniel Munro and contributors",
+      "description": "Collaborative record of historical progress on bounds for mathematical constants, with browsing, plots and downloadable structured data.",
+      "field": "mathematics",
+      "subfield": [
+        "combinatorics",
+        "logic-and-computability",
+        "geometry-and-packing"
+      ],
+      "granularity": "record-table",
+      "size": {
+        "total": 875,
+        "unit": "constants tracked",
+        "as_of": "2026-09-23",
+        "note": "Sum across 16 constant groups on the homepage, such as Ramsey numbers, cages and busy beaver values. Most groups are still marked Initial compilation."
+      },
+      "verification": [
+        "bound",
+        "review"
+      ],
+      "verifier_access": "none",
+      "status_tracking": "per-problem",
+      "submission": [
+        "issue",
+        "forum",
+        "email"
+      ],
+      "access": "open",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "A record of progress rather than a submission venue; improvements are made elsewhere and then recorded here."
+      },
+      "contamination_risk": "low",
+      "notes": "Data contributions go through GitHub Discussions or email to Daniel Munro.",
+      "file": "sources/mathematics/leaps-in-bounds.yaml"
+    },
+    {
+      "id": "oeis-open",
+      "name": "OEIS Open",
+      "url": "https://github.com/epoch-research/LeanOpenProblems",
+      "maintainer": "Epoch AI (Tom Adamczewski)",
+      "description": "Open-source harness that runs any language model on 492 Lean-formalized OEIS conjectures, plus a 100-problem Lite subset.",
+      "field": "mathematics",
+      "subfield": [
+        "number-theory",
+        "formal-statements"
+      ],
+      "granularity": "benchmark",
+      "size": {
+        "total": 492,
+        "unit": "conjectures",
+        "as_of": "2026-08-13",
+        "note": "OEIS Open Lite is a random subset of 100. The conjectures come from the AlphaProof Nexus OEIS set."
+      },
+      "verification": [
+        "formal"
+      ],
+      "proof_assistant": "lean4",
+      "verifier_access": "public-code",
+      "status_tracking": "per-problem",
+      "submission": [
+        "self-run"
+      ],
+      "access": "open",
+      "license": "MIT",
+      "ai_records": [
+        {
+          "summary": "Language models with minimal tools resolved 147 of the 492 conjectures at a budget of $50 per attempt; the best model scored 44% on Lite at $200 per attempt.",
+          "date": "2026-08-12",
+          "system": "Several frontier language models",
+          "level": "machine-checked",
+          "autonomy": "autonomous",
+          "disclosure": [
+            "denominator",
+            "cost"
+          ],
+          "evidence": [
+            "https://arxiv.org/abs/2608.11941"
+          ]
+        }
+      ],
+      "last_updated": "2026-09-23",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "high",
+        "rationale": "Cheap automatic Lean check, and the author reports many conjectures fall at modest cost."
+      },
+      "contamination_risk": "low",
+      "notes": "The author says these conjectures are of uncertain mathematical significance and most have received little attention. The repository has no README yet; see the paper for usage.",
+      "file": "sources/mathematics/oeis-open.yaml"
+    },
+    {
+      "id": "optimization-constants",
+      "name": "Optimization Constants in Mathematics",
+      "url": "https://github.com/teorth/optimizationproblems",
+      "alt_urls": [
+        "https://teorth.github.io/optimizationproblems/"
+      ],
+      "maintainer": "Damek Davis, Paata Ivanisvili and Terence Tao",
+      "description": "Best known upper and lower bounds on constants from variational problems and inequalities, with a changelog of recent progress.",
+      "field": "mathematics",
+      "subfield": [
+        "analysis-and-inequalities",
+        "combinatorics"
+      ],
+      "granularity": "record-table",
+      "size": {
+        "total": 115,
+        "unit": "constants (table rows, numbered C1a, C1b and so on)",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "bound",
+        "review"
+      ],
+      "verifier_access": "none",
+      "status_tracking": "per-problem",
+      "submission": [
+        "pr"
+      ],
+      "access": "open",
+      "license": "Apache-2.0",
+      "last_updated": "2026-09-05",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "high",
+        "rationale": "Many bounds can be improved with an explicit construction or certificate, and small improvements are recorded."
+      },
+      "contamination_risk": "low",
+      "notes": "Submissions are reviewed for plausibility only, not certified. An asterisk marks bounds with minimal verification. Several recent entries credit AI systems or AI companies; check each constant's page and its cited source.",
+      "file": "sources/mathematics/optimization-constants.yaml"
+    },
+    {
+      "id": "rakesearch",
+      "name": "RakeSearch",
+      "url": "https://rake.boincfast.ru/rakesearch/",
+      "alt_urls": [
+        "https://github.com/sirzooro/RakeSearch"
+      ],
+      "maintainer": "RakeSearch project (BOINC volunteer computing)",
+      "description": "Volunteer computing project that searches for pairs of mutually orthogonal diagonal Latin squares and ranks squares by their orthogonal mates.",
+      "field": "mathematics",
+      "subfield": [
+        "combinatorics"
+      ],
+      "granularity": "platform",
+      "size": {
+        "note": "The project reports squares processed one by one; square 69 was completed on 2026-08-07.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "bound"
+      ],
+      "verifier_access": "none",
+      "status_tracking": "per-problem",
+      "submission": [
+        "volunteer-compute"
+      ],
+      "access": "account",
+      "last_updated": "2026-08-07",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "low",
+        "rationale": "Progress comes from donated compute through BOINC, not from submitted solutions."
+      },
+      "contamination_risk": "low",
+      "notes": "The GitHub repository holds the BOINC application source and was last changed in 2020; the project site is active.",
+      "file": "sources/mathematics/rakesearch.yaml"
+    },
+    {
+      "id": "small-ramsey-numbers",
+      "name": "Small Ramsey Numbers (dynamic survey DS1)",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS1",
+      "maintainer": "Stanisław Radziszowski",
+      "description": "Dynamic survey of all known nontrivial values and bounds for small graph, hypergraph and multicolor Ramsey numbers, with references.",
+      "field": "mathematics",
+      "subfield": [
+        "combinatorics",
+        "graph-theory"
+      ],
+      "granularity": "record-table",
+      "size": {
+        "note": "Revision dated 2026-04-24.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "bound",
+        "review"
+      ],
+      "verifier_access": "none",
+      "status_tracking": "per-problem",
+      "submission": [
+        "publish-then-notify"
+      ],
+      "access": "open",
+      "last_updated": "2026-04-24",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "A new lower bound is a checkable coloring, but upper bounds usually need long proofs or heavy computation."
+      },
+      "contamination_risk": "low",
+      "notes": "Published in The Electronic Journal of Combinatorics since 1994. Results enter the survey after publication.",
+      "file": "sources/mathematics/small-ramsey-numbers.yaml"
+    },
+    {
+      "id": "uq-unsolved-questions",
+      "name": "UQ (Unsolved Questions)",
+      "url": "https://uq.stanford.edu/",
+      "alt_urls": [
+        "https://arxiv.org/abs/2508.17580"
+      ],
+      "maintainer": "UQ authors (Stanford and collaborators)",
+      "description": "500 unsolved Stack Exchange questions, from CS theory and math to history, with validator screening and community verification of answers.",
+      "field": "mathematics",
+      "subfield": [
+        "cross-topic"
+      ],
+      "granularity": "benchmark",
+      "size": {
+        "total": 500,
+        "unit": "questions",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "review"
+      ],
+      "verifier_access": "public-service",
+      "status_tracking": "per-problem",
+      "submission": [
+        "self-run",
+        "email"
+      ],
+      "access": "open",
+      "last_updated": "2025-08-25",
+      "last_checked": "2026-09-23",
+      "lifecycle": "slow",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Questions vary widely, and acceptance needs human verification."
+      },
+      "contamination_risk": "low",
+      "notes": "Models are run with the open code; people verify answers on the site and contact a project lead. Also covers topics outside mathematics, from CS theory to sci-fi and history. The latest dated news on the site is the August 2025 paper.",
+      "file": "sources/mathematics/uq-unsolved-questions.yaml"
+    },
+    {
+      "id": "cvrplib",
+      "name": "CVRPLIB",
+      "url": "https://galgos.inf.puc-rio.br/cvrplib/index.php/en/",
+      "maintainer": "Galgos, PUC-Rio (site maintained by Rafael Martinelli)",
+      "description": "Capacitated vehicle routing instances with best known solutions, a solution checker, and a log of every improvement.",
+      "field": "computer-science",
+      "subfield": [
+        "combinatorial-optimization"
+      ],
+      "granularity": "record-table",
+      "size": {
+        "note": "Sets A, B, E, F, M, P, CMT, Golden, Li, X (100 instances), XML (10,000), XL (100 instances with 1,000 to 10,000 customers, 2026), DIMACS and AGS, plus VRPTW sets.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "bound"
+      ],
+      "verifier_access": "public-service",
+      "status_tracking": "per-problem",
+      "submission": [
+        "email"
+      ],
+      "access": "open",
+      "ai_records": [
+        {
+          "summary": "Seventy improved best known solutions on the XL set, reported by the Famou Agent Team (Baidu AI Cloud) and accepted by CVRPLIB.",
+          "date": "2026-09-11",
+          "system": "Famou Agent (Baidu AI Cloud)",
+          "level": "source-accepted",
+          "autonomy": "unknown",
+          "evidence": [
+            "https://galgos.inf.puc-rio.br/cvrplib/index.php/en/updates/"
+          ],
+          "notes": "CVRPLIB checked and accepted the solutions. The update names the team, not the method; Famou is Baidu's self-evolving optimization agent."
+        }
+      ],
+      "last_updated": "2026-09-11",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "high",
+        "rationale": "Any improved solution is checked automatically, and the large XL instances are beyond exact methods."
+      },
+      "contamination_risk": "low",
+      "notes": "Anyone can submit improved solutions; the site lists galgos@inf.puc-rio.br as its contact and has a solution checker. Claims of optimality need a citable reference for the method. The 2026 BKS Challenge on the XL set produced 1,932 improved solutions. The older vrp.galgos URL is outdated.",
+      "file": "sources/computer-science/cvrplib.yaml"
+    },
+    {
+      "id": "miplib-2017",
+      "name": "MIPLIB 2017",
+      "url": "https://miplib.zib.de/",
+      "maintainer": "Zuse Institute Berlin (Ambros Gleixner and Mark Turner)",
+      "description": "Mixed integer programming library whose instances are tagged easy, hard or open, with a solution checker and periodic solution updates.",
+      "field": "computer-science",
+      "subfield": [
+        "combinatorial-optimization"
+      ],
+      "granularity": "record-table",
+      "size": {
+        "total": 1065,
+        "open": 217,
+        "unit": "instances in the collection set",
+        "as_of": "2026-09-23",
+        "note": "The benchmark set has 240 instances. The open count is from the site's open tag page."
+      },
+      "verification": [
+        "bound"
+      ],
+      "verifier_access": "public-code",
+      "status_tracking": "per-problem",
+      "submission": [
+        "email"
+      ],
+      "access": "open",
+      "last_updated": "2026-01-26",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "high",
+        "rationale": "Better incumbents on open instances are easy to check with the published solution checker."
+      },
+      "contamination_risk": "low",
+      "notes": "Send new solutions to miplibsolutions@zib.de. Solufile 36 (2026-01-26) added 40 better incumbents.",
+      "file": "sources/computer-science/miplib-2017.yaml"
+    },
+    {
+      "id": "qaplib",
+      "name": "QAPLIB",
+      "url": "https://coral.ise.lehigh.edu/data-sets/qaplib/",
+      "maintainer": "Peter Hahn and Miguel Anjos (hosted by COR@L, Lehigh)",
+      "description": "Quadratic assignment problem instances with best known solutions and lower bounds.",
+      "field": "computer-science",
+      "subfield": [
+        "combinatorial-optimization"
+      ],
+      "granularity": "record-table",
+      "size": {
+        "total": 136,
+        "unit": "instances",
+        "as_of": "2026-09-23",
+        "note": "The download page says the archives contain 136 instances and 111 solutions."
+      },
+      "verification": [
+        "bound"
+      ],
+      "verifier_access": "none",
+      "status_tracking": "per-problem",
+      "submission": [
+        "email"
+      ],
+      "access": "open",
+      "last_checked": "2026-09-23",
+      "lifecycle": "stale",
+      "tractability": {
+        "level": "high",
+        "rationale": "A better assignment is trivial to score, but nobody is visibly updating the records."
+      },
+      "contamination_risk": "low",
+      "notes": "The What's New page was last updated in August 2011, so the listed best known solutions may be out of date.",
+      "file": "sources/computer-science/qaplib.yaml"
+    },
+    {
+      "id": "sat-competition-2026",
+      "name": "SAT Competition 2026",
+      "url": "https://satcompetition.github.io/2026/",
+      "maintainer": "SAT Competition organizers (satellite event of the SAT Conference)",
+      "description": "Annual SAT solver competition with Main, Parallel, Experimental and Cloud tracks, and separate sub-tracks for AI-generated and AI-tuned solvers.",
+      "field": "computer-science",
+      "subfield": [
+        "sat-smt"
+      ],
+      "granularity": "competition",
+      "size": {
+        "note": "Instances selected per track from submitted benchmarks; the 2026 instances are tagged in the Global Benchmark Database.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "score",
+        "blind"
+      ],
+      "verifier_access": "public-code",
+      "status_tracking": "per-round",
+      "submission": [
+        "form"
+      ],
+      "access": "open",
+      "last_updated": "2026-08-10",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Scoring is automatic, but only once a year, and competitive solvers are mature engineering."
+      },
+      "contamination_risk": "low",
+      "notes": "Results were presented 2026-07-23 and updated 2026-08-10. AI-generated and AI-tuned solvers compete under the same rules but only for their own awards. The 2027 edition will need a new entry or an updated URL.",
+      "file": "sources/computer-science/sat-competition-2026.yaml"
+    },
+    {
+      "id": "proteinbase-competitions",
+      "name": "Adaptyv protein design competitions (Proteinbase)",
+      "url": "https://proteinbase.com/competitions",
+      "maintainer": "Adaptyv Bio",
+      "description": "Protein design competitions in which Adaptyv makes and tests the selected designs in its own wet lab and publishes every result, including failures.",
+      "field": "biology-medicine",
+      "subfield": [
+        "design"
+      ],
+      "granularity": "competition",
+      "size": {
+        "total": 25490,
+        "unit": "designs submitted across all competitions",
+        "as_of": "2026-09-23",
+        "note": "2,223 designs tested and 215 confirmed binders across past competitions, per the page."
+      },
+      "verification": [
+        "blind"
+      ],
+      "verifier_access": "gated-free",
+      "status_tracking": "per-round",
+      "submission": [
+        "leaderboard-upload"
+      ],
+      "access": "open",
+      "ai_records": [
+        {
+          "summary": "Adaptyv tested 1,320 Claude-designed binders in a separate study for Anthropic; 354 bound their target, and designs bound 14 of the 15 targets that could be measured.",
+          "date": "2026-08-20",
+          "system": "Claude Mythos Preview; Claude Opus 4.8",
+          "level": "source-accepted",
+          "autonomy": "autonomous",
+          "evidence": [
+            "https://www.adaptyvbio.com/blog/anthropic-1"
+          ],
+          "notes": "Not a competition entry. Autonomy is as Anthropic describes it; Adaptyv's write-up says Anthropic researchers chose the 16 targets and prompted the models. Adaptyv ran the wet-lab measurements."
+        }
+      ],
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Entry is free and any method is allowed, but lab slots are limited and results take weeks."
+      },
+      "contamination_risk": "none",
+      "notes": "The Anthropic x Adaptyv competition, with five challenges and more than 5,000 proteins to test, runs from September to December 2026.",
+      "file": "sources/biology-medicine/proteinbase-competitions.yaml"
+    },
+    {
+      "id": "capri",
+      "name": "CAPRI",
+      "url": "https://www.ebi.ac.uk/pdbe/complex-pred/capri/",
+      "maintainer": "CAPRI management (hosted at EMBL-EBI)",
+      "description": "Blind prediction of protein complexes and assemblies from unpublished structures, run in rounds, including joint rounds with CASP.",
+      "field": "biology-medicine",
+      "subfield": [
+        "structure"
+      ],
+      "granularity": "competition",
+      "size": {
+        "note": "Round-based. Round 65 is the 7th joint CASP-CAPRI assembly challenge (CASP17 season); Round 64 had 8 antigen and antibody targets.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "blind"
+      ],
+      "verifier_access": "gated-free",
+      "status_tracking": "per-round",
+      "submission": [
+        "form"
+      ],
+      "access": "account",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Targets arrive a few at a time and are scored against experimental structures only after rounds close."
+      },
+      "contamination_risk": "none",
+      "notes": "Predictors in joint rounds must also register with CASP. Groups can take part as scorers only.",
+      "file": "sources/biology-medicine/capri.yaml"
+    },
+    {
+      "id": "casp17",
+      "name": "CASP17",
+      "url": "https://predictioncenter.org/casp17/index.cgi",
+      "maintainer": "Protein Structure Prediction Center",
+      "description": "Biennial blind prediction of protein, RNA, complex and ligand structures, assessed against experimental structures not yet public.",
+      "field": "biology-medicine",
+      "subfield": [
+        "structure"
+      ],
+      "granularity": "competition",
+      "size": {
+        "note": "Targets were released from late April to July 31, 2026. CASP16 in 2024 had 150+ targets and over 120,000 models.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "blind"
+      ],
+      "verifier_access": "gated-free",
+      "status_tracking": "per-round",
+      "submission": [
+        "form",
+        "api"
+      ],
+      "access": "account",
+      "last_updated": "2026-09-11",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Deep learning dominates, but only every two years, and CASP16 suggested a plateau."
+      },
+      "contamination_risk": "none",
+      "notes": "The CASP17 prediction season is over. Results come out the day before the conference (listed for December 2026). The next chance to take part is CASP18.",
+      "file": "sources/biology-medicine/casp17.yaml"
+    },
+    {
+      "id": "polaris-hub",
+      "name": "Polaris Hub",
+      "url": "https://polarishub.io/",
+      "alt_urls": [
+        "https://github.com/polaris-hub/polaris"
+      ],
+      "maintainer": "Polaris (cross-industry drug discovery consortium)",
+      "description": "Benchmarking platform for machine learning in drug discovery, with shared datasets, benchmarks and competitions, used through a Python client.",
+      "field": "biology-medicine",
+      "subfield": [
+        "drug-discovery"
+      ],
+      "granularity": "platform",
+      "size": {
+        "note": "Number of datasets and benchmarks not stated on the homepage.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "score"
+      ],
+      "verifier_access": "public-code",
+      "status_tracking": "leaderboard",
+      "submission": [
+        "api"
+      ],
+      "access": "account",
+      "license": "Apache-2.0 (client)",
+      "last_updated": "2025-08-22",
+      "last_checked": "2026-09-23",
+      "lifecycle": "slow",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Evaluation is automatic through the client, but most benchmarks test known data rather than open questions."
+      },
+      "contamination_risk": "high",
+      "notes": "The client repository was last changed in August 2025, so activity is unclear.",
+      "file": "sources/biology-medicine/polaris-hub.yaml"
+    },
+    {
+      "id": "therapeutics-data-commons",
+      "name": "Therapeutics Data Commons (TDC)",
+      "url": "https://tdcommons.ai/",
+      "alt_urls": [
+        "https://github.com/mims-harvard/TDC"
+      ],
+      "maintainer": "Zitnik lab (Harvard) and collaborators",
+      "description": "AI-ready drug discovery datasets, tasks and leaderboards with fixed data splits and evaluators, accessed through a Python library.",
+      "field": "biology-medicine",
+      "subfield": [
+        "drug-discovery"
+      ],
+      "granularity": "benchmark",
+      "size": {
+        "note": "Leaderboard groups include ADMET, drug combination, docking, drug-target interaction, and clinical trial outcome.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "score"
+      ],
+      "verifier_access": "public-code",
+      "status_tracking": "leaderboard",
+      "submission": [
+        "form",
+        "pr"
+      ],
+      "access": "open",
+      "license": "MIT (library)",
+      "last_updated": "2025-07-13",
+      "last_checked": "2026-09-23",
+      "lifecycle": "slow",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Scoring is automatic, but the test sets are public, so a high score is not a new discovery."
+      },
+      "contamination_risk": "high",
+      "notes": "A benchmark rather than a set of open problems. The GitHub repository was last changed in July 2025.",
+      "file": "sources/biology-medicine/therapeutics-data-commons.yaml"
+    },
+    {
+      "id": "virtual-cell-challenge",
+      "name": "Virtual Cell Challenge 2026",
+      "url": "https://virtualcellchallenge.org/",
+      "maintainer": "Arc Institute",
+      "description": "Predict how six cell lines respond to specified gene knockdowns, zero-shot, scored against new Arc Institute perturbation data.",
+      "field": "biology-medicine",
+      "subfield": [
+        "cell-modeling"
+      ],
+      "granularity": "competition",
+      "size": {
+        "total": 6,
+        "unit": "cell lines",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "blind"
+      ],
+      "verifier_access": "gated-free",
+      "status_tracking": "leaderboard",
+      "submission": [
+        "leaderboard-upload"
+      ],
+      "access": "account",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Scoring is automatic, but useful models need large single-cell training data and compute."
+      },
+      "contamination_risk": "none",
+      "notes": "Runs August to November 2026. Final test set released 2026-10-22; final submissions due 2026-11-05. Prizes of $100,000, $50,000 and $25,000. There is no new training set this year, and weights and code need not be released.",
+      "file": "sources/biology-medicine/virtual-cell-challenge.yaml"
+    },
+    {
+      "id": "fairchem-leaderboard",
+      "name": "FAIR Chemistry Leaderboard",
+      "url": "https://huggingface.co/spaces/facebook/fairchem_leaderboard",
+      "alt_urls": [
+        "https://github.com/facebookresearch/fairchem"
+      ],
+      "maintainer": "Meta FAIR Chemistry",
+      "description": "Leaderboards for machine-learned potentials on OMol25 (molecules) and OC20 (catalysts), including energy, forces and downstream chemistry tasks.",
+      "field": "chemistry-materials",
+      "subfield": [
+        "molecules",
+        "catalysis"
+      ],
+      "granularity": "benchmark",
+      "size": {
+        "total": 2,
+        "unit": "datasets with leaderboards (OMol25, OC20)",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "score"
+      ],
+      "verifier_access": "public-service",
+      "status_tracking": "leaderboard",
+      "submission": [
+        "leaderboard-upload"
+      ],
+      "access": "account",
+      "last_updated": "2026-08-17",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Scoring is automatic, but competitive models need large-scale training."
+      },
+      "contamination_risk": "low",
+      "notes": "A benchmark, not an open problem. Submit a prediction file through the Hugging Face space. fairchem-core 2.22.0 was released on 2026-08-17.",
+      "file": "sources/chemistry-materials/fairchem-leaderboard.yaml"
+    },
+    {
+      "id": "matbench-discovery",
+      "name": "Matbench Discovery",
+      "url": "https://matbench-discovery.materialsproject.org/",
+      "alt_urls": [
+        "https://github.com/janosh/matbench-discovery"
+      ],
+      "maintainer": "Janosh Riebesell and contributors",
+      "description": "Leaderboard of machine-learned interatomic potentials on crystal stability discovery, geometry optimization, phonons and molecular dynamics.",
+      "field": "chemistry-materials",
+      "subfield": [
+        "materials"
+      ],
+      "granularity": "benchmark",
+      "size": {
+        "total": 53,
+        "unit": "eligible models on the leaderboard",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "score"
+      ],
+      "verifier_access": "public-code",
+      "status_tracking": "leaderboard",
+      "submission": [
+        "pr"
+      ],
+      "access": "open",
+      "license": "MIT",
+      "last_updated": "2026-09-23",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Needs training large models; the test set is fixed."
+      },
+      "contamination_risk": "high",
+      "notes": "A benchmark, not an open problem. Latest model added on 2026-09-13.",
+      "file": "sources/chemistry-materials/matbench-discovery.yaml"
+    },
+    {
+      "id": "operational-weatherbench",
+      "name": "Operational WeatherBench",
+      "url": "https://owb.brightband.com/",
+      "maintainer": "Brightband",
+      "description": "Live scores for AI and physics-based weather models on real forecasts, computed with WeatherBench-X as each cycle verifies.",
+      "field": "earth-climate-energy",
+      "subfield": [
+        "weather"
+      ],
+      "granularity": "benchmark",
+      "size": {
+        "note": "Continuous; ranked by forecast cycle over the last 30 days.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "blind",
+        "score"
+      ],
+      "verifier_access": "public-code",
+      "status_tracking": "leaderboard",
+      "submission": [
+        "email"
+      ],
+      "access": "open",
+      "license": "CC-BY-4.0 (site)",
+      "last_updated": "2026-09-15",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "low",
+        "rationale": "Scores future weather, so it cannot be gamed, but entrants need an operational forecast model."
+      },
+      "contamination_risk": "none",
+      "notes": "To propose a model, contact Brightband. On 2026-09-23 the latest ranked cycle was 15 Sep 2026 12Z, with WeatherNext3 Mean (Google DeepMind) on the active win streak.",
+      "file": "sources/earth-climate-energy/operational-weatherbench.yaml"
+    },
+    {
+      "id": "weatherbench-2",
+      "name": "WeatherBench 2",
+      "url": "https://sites.research.google/gr/weatherbench/",
+      "alt_urls": [
+        "https://github.com/google-research/weatherbench2"
+      ],
+      "maintainer": "Google Research",
+      "description": "Open framework and scorecards comparing ML and physics-based global weather models on medium-range (1 to 15 day) forecasts.",
+      "field": "earth-climate-energy",
+      "subfield": [
+        "weather"
+      ],
+      "granularity": "benchmark",
+      "size": {
+        "note": "Headline deterministic and probabilistic scorecards on 2022 data, with ERA5 ground truth.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "score"
+      ],
+      "verifier_access": "public-code",
+      "status_tracking": "leaderboard",
+      "submission": [
+        "issue"
+      ],
+      "access": "open",
+      "license": "Apache-2.0 (code)",
+      "last_updated": "2026-09-10",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "low",
+        "rationale": "A competitive model needs large-scale training on reanalysis data."
+      },
+      "contamination_risk": "high",
+      "notes": "Evaluation code is now WeatherBench-X. New models are added through the documented process or a GitHub issue.",
+      "file": "sources/earth-climate-energy/weatherbench-2.yaml"
+    },
+    {
+      "id": "arc-prize-2026",
+      "name": "ARC Prize 2026",
+      "url": "https://arcprize.org/competitions/2026",
+      "maintainer": "ARC Prize Foundation",
+      "description": "Prize competition on ARC-AGI-3 interactive environments and ARC-AGI-2, plus a paper award. Winning solutions must be open-sourced.",
+      "field": "ai-ml",
+      "subfield": [
+        "reasoning"
+      ],
+      "granularity": "competition",
+      "size": {
+        "note": "$2M in prizes across 3 tracks. The ARC-AGI-3 track totals $850,000, including a $700,000 grand prize for the first agent to score 100%.",
+        "as_of": "2026-09-23"
+      },
+      "verification": [
+        "blind"
+      ],
+      "verifier_access": "gated-free",
+      "status_tracking": "leaderboard",
+      "submission": [
+        "leaderboard-upload"
+      ],
+      "access": "account",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Hidden evaluation on Kaggle with no internet access, so API-based systems cannot be entered."
+      },
+      "contamination_risk": "none",
+      "notes": "Submissions due 2026-11-02, papers due 2026-11-08, results 2026-12-04. ARC-AGI-3 milestone 2 closes 2026-09-30. Entry is through Kaggle only.",
+      "file": "sources/ai-ml/arc-prize-2026.yaml"
+    },
+    {
+      "id": "open-challenge-list",
+      "name": "Open Challenge List",
+      "url": "https://openchallengelist.com/",
+      "maintainer": "Open Challenge List",
+      "description": "Automatically compiled directory of GitHub-hosted competitions and open problems with public leaderboards, and the AI agents that hold records.",
+      "field": "meta",
+      "granularity": "meta-list",
+      "size": {
+        "total": 29,
+        "unit": "competitions",
+        "as_of": "2026-09-22",
+        "note": "Count from its llms.txt, crawled 2026-09-22."
+      },
+      "verification": [
+        "score"
+      ],
+      "verifier_access": "public-code",
+      "status_tracking": "leaderboard",
+      "submission": [
+        "pr"
+      ],
+      "access": "open",
+      "last_updated": "2026-09-22",
+      "last_checked": "2026-09-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "high",
+        "rationale": "Every listed leaderboard is a public repository that accepts pull requests."
+      },
+      "contamination_risk": "low",
+      "agent_interfaces": [
+        "https://openchallengelist.com/llms.txt",
+        "https://openchallengelist.com/api/competitions",
+        "https://openchallengelist.com/api/open-problems"
+      ],
+      "notes": "A peer list. It is compiled automatically, attributes agents from commit trailers and PR bodies, and asks readers to verify before citing. It proposes a PROBLEM.md standard for competition repositories.",
+      "file": "sources/meta/open-challenge-list.yaml"
+    }
+  ],
+  "ai_records": [
+    {
+      "id": "jacobian-conjecture-3d-counterexample",
+      "title": "Reported counterexample to the Jacobian conjecture in three dimensions",
+      "related_sources": [],
+      "summary": "Levent Alpöge presented an explicit counterexample to the Jacobian conjecture in three dimensions, saying it was found using Claude Fable 5.",
+      "date": "2026-07-19",
+      "system": "Claude Fable 5",
+      "level": "claimed",
+      "autonomy": "human+ai",
+      "secondhand": true,
+      "evidence": [
+        "https://arxiv.org/abs/2609.25050",
+        "https://theconversation.com/hello-there-the-jacobian-conjecture-is-false-thanx-why-a-tiny-social-media-post-has-mathematicians-rethinking-ai-283883"
+      ],
+      "notes": "Known here only through the FrontierMath Erdős paper and The Conversation, not from a primary write-up by the author. Pending review.",
+      "last_checked": "2026-09-23",
+      "file": "ai-records/jacobian-conjecture-3d-counterexample.yaml"
+    },
+    {
+      "id": "openai-astra-ten-results",
+      "title": "OpenAI Astra's ten results in mathematics and theoretical computer science",
+      "related_sources": [
+        "erdos-problems"
+      ],
+      "summary": "OpenAI published ten results produced with an unreleased Astra model, including sphere packing bounds, a non-sofic group and Erdős #146, #180 and #183, each with a Lean 4 formalization.",
+      "date": "2026-08-01",
+      "system": "OpenAI Astra (pre-release)",
+      "level": "machine-checked",
+      "autonomy": "unknown",
+      "evidence": [
+        "https://openai.com/index/ten-advances-in-mathematics/",
+        "https://github.com/openai/ten-proofs",
+        "https://cdn.openai.com/pdf/ten-proofs-oai.pdf"
+      ],
+      "disputed": true,
+      "dispute_evidence": [
+        "https://www.scientificamerican.com/article/openais-latest-math-breakthroughs-commit-research-misconduct-experts-say/"
+      ],
+      "notes": "Mathematicians quoted by Scientific American (2026-08-06) say the sphere-packing and non-sofic group results reuse earlier published work without proper credit. Press coverage says none of the ten had passed peer review as of September 2026. The Lean certificates check the formal statements, not novelty or credit. Press reports a compute cost of about $2,000, which could not be confirmed from a primary source.",
+      "last_checked": "2026-09-23",
+      "file": "ai-records/openai-astra-ten-results.yaml"
+    }
+  ],
+  "pending": [
+    {
+      "id": "aimo-prize",
+      "name": "AIMO Prize",
+      "url": "https://aimoprize.com/",
+      "field": "ai-ml",
+      "reason": "Unchecked (U) in the research.",
+      "to_check": [
+        "Current progress prize, dates and Kaggle entry."
+      ],
+      "file": "pending/aimo-prize.yaml"
+    },
+    {
+      "id": "align-to-innovate",
+      "name": "Align to Innovate tournaments",
+      "url": "https://alignbio.org/",
+      "field": "biology-medicine",
+      "reason": "Unchecked (U) in the research.",
+      "to_check": [
+        "Whether a protein engineering tournament is running, and its wet-lab scoring."
+      ],
+      "file": "pending/align-to-innovate.yaml"
+    },
+    {
+      "id": "arpa-e-grid-optimization",
+      "name": "ARPA-E Grid Optimization Competition",
+      "url": "https://gocompetition.energy.gov/",
+      "field": "earth-climate-energy",
+      "reason": "Unchecked (U) in the research, which says it is finished and archival.",
+      "to_check": [
+        "Whether the site and data are still online.",
+        "Whether a finished competition belongs in the list, as an archived benchmark."
+      ],
+      "file": "pending/arpa-e-grid-optimization.yaml"
+    },
+    {
+      "id": "awesome-ai-for-science",
+      "name": "awesome-ai-for-science",
+      "url": "https://github.com/ai-boost/awesome-ai-for-science",
+      "field": "meta",
+      "reason": "The research says it was not verified and should be checked by hand.",
+      "to_check": [
+        "Whether it is maintained, and whether it is a peer list worth linking."
+      ],
+      "file": "pending/awesome-ai-for-science.yaml"
+    },
+    {
+      "id": "cagi",
+      "name": "CAGI (Critical Assessment of Genome Interpretation)",
+      "url": "https://genomeinterpretation.org/",
+      "field": "biology-medicine",
+      "reason": "Unchecked (U) in the research.",
+      "to_check": [
+        "Current edition, open challenges and data use agreements."
+      ],
+      "file": "pending/cagi.yaml"
+    },
+    {
+      "id": "cameo",
+      "name": "CAMEO",
+      "url": "https://www.cameo3d.org/",
+      "field": "biology-medicine",
+      "reason": "Unchecked (U) in the research.",
+      "to_check": [
+        "That weekly blind targets are still released, and the server registration process."
+      ],
+      "file": "pending/cameo.yaml"
+    },
+    {
+      "id": "classic-cs-record-tables",
+      "name": "Classic CS record tables (sorting networks, TSPLIB, DIMACS coloring, Taillard job shop)",
+      "field": "computer-science",
+      "reason": "Unchecked (U) in the research, which says each needs its own entry and check.",
+      "to_check": [
+        "A current URL and maintainer for the sorting network size and depth records.",
+        "TSPLIB and Concorde best-known tours.",
+        "DIMACS graph coloring best-known values.",
+        "Taillard job shop best-known makespans.",
+        "Which of these are stale."
+      ],
+      "file": "pending/classic-cs-record-tables.yaml"
+    },
+    {
+      "id": "code-tables",
+      "name": "Code Tables",
+      "url": "https://www.codetables.de/",
+      "field": "mathematics",
+      "reason": "Unchecked (U) in the research.",
+      "to_check": [
+        "That Markus Grassl still maintains the tables, and the date of the last update.",
+        "How new constructions are submitted."
+      ],
+      "notes": "Also linked from the Optimization Constants related-sites list.",
+      "file": "pending/code-tables.yaml"
+    },
+    {
+      "id": "dream-challenges",
+      "name": "DREAM Challenges",
+      "url": "https://dreamchallenges.org/",
+      "field": "biology-medicine",
+      "reason": "Unchecked (U) in the research, which says few challenges are live.",
+      "to_check": [
+        "Which challenges are open, and their Synapse submission terms."
+      ],
+      "file": "pending/dream-challenges.yaml"
+    },
+    {
+      "id": "equational-theories-project",
+      "name": "Equational Theories Project",
+      "url": "https://teorth.github.io/equational_theories/",
+      "field": "mathematics",
+      "reason": "Unchecked (U) in the research. It is also a completed project, so it may belong in a design-models note rather than the list.",
+      "to_check": [
+        "Final report figures (the research cites all 22,028,942 implications among 4,694 magma laws, checked in Lean).",
+        "Whether it should be listed at all, given that it is closed."
+      ],
+      "file": "pending/equational-theories-project.yaml"
+    },
+    {
+      "id": "kourovka-notebook",
+      "name": "Kourovka Notebook",
+      "url": "https://arxiv.org/abs/1401.0300",
+      "field": "mathematics",
+      "reason": "Unchecked (U) in the research.",
+      "to_check": [
+        "Latest edition and arXiv revision (the research cites the 21st edition, 2026, and revision v45 of 2026-07-03).",
+        "How solutions are reported to the editors (E. I. Khukhro and V. D. Mazurov)."
+      ],
+      "file": "pending/kourovka-notebook.yaml"
+    },
+    {
+      "id": "la-jolla-covering-repository",
+      "name": "La Jolla Covering Repository",
+      "url": "https://ljcr.dmgordon.org/cover.html",
+      "field": "mathematics",
+      "reason": "Marked S in the research, but the URL did not respond on 2026-09-23 (connection failed on HTTPS and HTTP).",
+      "to_check": [
+        "Whether the site is back online, or has moved.",
+        "The successor \"Covering Repository\" the research says is replacing it, and its URL.",
+        "The Zenodo dataset (v1.1, April 2026) cited by the research."
+      ],
+      "last_checked": "2026-09-23",
+      "file": "pending/la-jolla-covering-repository.yaml"
+    },
+    {
+      "id": "manypoints",
+      "name": "manYPoints",
+      "url": "https://manypoints.org/",
+      "field": "mathematics",
+      "reason": "Unchecked (U) in the research.",
+      "to_check": [
+        "Maintainers, submission route and last update."
+      ],
+      "notes": "Tao's related-sites list links https://manypoints.org/Info.aspx.",
+      "file": "pending/manypoints.yaml"
+    },
+    {
+      "id": "matrix-multiplication-exponent",
+      "name": "Matrix multiplication exponent and small tensor ranks",
+      "url": "https://en.wikipedia.org/wiki/Computational_complexity_of_matrix_multiplication",
+      "field": "computer-science",
+      "reason": "Unchecked (U) in the research, and there is no single maintained registry to point to.",
+      "to_check": [
+        "A maintained source for record bounds on omega and for small tensor ranks.",
+        "Whether the Optimization Constants entry C15a already covers the headline bound."
+      ],
+      "file": "pending/matrix-multiplication-exponent.yaml"
+    },
+    {
+      "id": "millennium-prize-problems",
+      "name": "Millennium Prize Problems",
+      "url": "https://www.claymath.org/millennium-problems/",
+      "field": "mathematics",
+      "reason": "Unchecked (U) in the research.",
+      "to_check": [
+        "URL and current status of the seven problems (one solved).",
+        "The Clay Mathematics Institute's rules for considering a solution."
+      ],
+      "file": "pending/millennium-prize-problems.yaml"
+    },
+    {
+      "id": "narrow-admissible-tuples",
+      "name": "Narrow admissible tuples",
+      "url": "https://math.mit.edu/~primegaps/",
+      "field": "mathematics",
+      "reason": "Unchecked (U) in the research.",
+      "to_check": [
+        "Whether Andrew Sutherland's tables still accept new tuples, and how.",
+        "Date of the last update."
+      ],
+      "file": "pending/narrow-admissible-tuples.yaml"
+    },
+    {
+      "id": "oeis",
+      "name": "OEIS (On-Line Encyclopedia of Integer Sequences)",
+      "url": "https://oeis.org/",
+      "field": "mathematics",
+      "reason": "The research marked the URL unchecked (U) and its AI note secondhand (S).",
+      "to_check": [
+        "Current sequence count and date (the research cites 399,018 from a page footer).",
+        "How open conjectures are marked in entries, and the editorial approval process.",
+        "The report that some entries say a result was proved by an autonomous AI agent with a Lean file; find a primary example."
+      ],
+      "notes": "The homepage answered HTTP 200 on 2026-09-23, but no facts were checked.",
+      "file": "pending/oeis.yaml"
+    },
+    {
+      "id": "open-problem-garden",
+      "name": "Open Problem Garden",
+      "url": "http://www.openproblemgarden.org/",
+      "field": "mathematics",
+      "reason": "Unchecked (U) in the research, which also says it is likely unmaintained.",
+      "to_check": [
+        "Whether the site is online and still accepts edits.",
+        "Date of the most recent change, to set lifecycle (likely stale)."
+      ],
+      "file": "pending/open-problem-garden.yaml"
+    },
+    {
+      "id": "openchallenges-io",
+      "name": "OpenChallenges.io (Sage Bionetworks)",
+      "field": "meta",
+      "reason": "Named in the research as a biomedical challenge hub, without a check mark or URL.",
+      "to_check": [
+        "URL, scope and whether it lists live challenges with stated scoring."
+      ],
+      "file": "pending/openchallenges-io.yaml"
+    },
+    {
+      "id": "prize-platforms",
+      "name": "Kaggle, DrivenData, HeroX and XPRIZE",
+      "field": "meta",
+      "reason": "Unchecked (U) in the research, which says to list individual research-grade competitions rather than whole platforms.",
+      "to_check": [
+        "Pick individual live competitions on these platforms that have a precise statement and a stated verifier, and propose each as its own source."
+      ],
+      "file": "pending/prize-platforms.yaml"
+    },
+    {
+      "id": "problems-worth-solving",
+      "name": "Problems Worth Solving",
+      "url": "https://github.com/futurelabstudios/problems-worth-solving",
+      "field": "meta",
+      "reason": "The research says it was not verified and should be checked by hand.",
+      "to_check": [
+        "Whether it is maintained, and whether its problems have stated verifiers."
+      ],
+      "file": "pending/problems-worth-solving.yaml"
+    },
+    {
+      "id": "proofatlas-top-500",
+      "name": "ProofAtlas Top 500 Open Problems",
+      "field": "meta",
+      "reason": "Named in the research without a check mark or URL. It ranks problems by LLM-assessed importance rather than by how they are verified.",
+      "to_check": [
+        "URL, maintainer, and whether it fits a verification-first list at all."
+      ],
+      "file": "pending/proofatlas-top-500.yaml"
+    },
+    {
+      "id": "spherical-codes",
+      "name": "Spherical codes (Henry Cohn)",
+      "url": "https://www.spherical-codes.org/",
+      "field": "mathematics",
+      "reason": "Unchecked (U) in the research, and the URL differs between sources.",
+      "to_check": [
+        "Which URL is current; the research gives https://cohn.mit.edu/spherical-codes and Tao's related-sites list gives https://www.spherical-codes.org/.",
+        "Submission route and whether any entries were found by AI."
+      ],
+      "file": "pending/spherical-codes.yaml"
+    },
+    {
+      "id": "verifier-challenge",
+      "name": "Verifier Challenge",
+      "url": "https://verifierchallenge.org/",
+      "field": "ai-ml",
+      "reason": "Marked S in the research. On 2026-09-23 the site describes a planned open competition and a prototype, not a live challenge with a verifier.",
+      "to_check": [
+        "Whether the competition has opened, with a task statement and scoring."
+      ],
+      "last_checked": "2026-09-23",
+      "notes": "Run by Jason Hausenloy and Jasmine Li. The prototype traces are published on Hugging Face under CC-BY-4.0.",
+      "file": "pending/verifier-challenge.yaml"
+    },
+    {
+      "id": "vesuvius-challenge",
+      "name": "Vesuvius Challenge",
+      "url": "https://scrollprize.org/",
+      "field": "ai-ml",
+      "reason": "Unchecked (U) in the research.",
+      "to_check": [
+        "Open prizes, how submissions are reviewed, and current activity."
+      ],
+      "file": "pending/vesuvius-challenge.yaml"
+    }
+  ]
+}

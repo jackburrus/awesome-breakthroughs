@@ -1,0 +1,8 @@
+id: arpa-e-grid-optimization
+name: ARPA-E Grid Optimization Competition
+url: https://gocompetition.energy.gov/
+field: earth-climate-energy
+reason: Unchecked (U) in the research, which says it is finished and archival.
+to_check:
+  - Whether the site and data are still online.
+  - Whether a finished competition belongs in the list, as an archived benchmark.

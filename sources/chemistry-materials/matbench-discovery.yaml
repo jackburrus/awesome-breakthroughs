@@ -1,0 +1,28 @@
+id: matbench-discovery
+name: Matbench Discovery
+url: https://matbench-discovery.materialsproject.org/
+alt_urls:
+  - https://github.com/janosh/matbench-discovery
+maintainer: Janosh Riebesell and contributors
+description: Leaderboard of machine-learned interatomic potentials on crystal stability discovery, geometry optimization, phonons and molecular dynamics.
+field: chemistry-materials
+subfield: [materials]
+granularity: benchmark
+size:
+  total: 53
+  unit: eligible models on the leaderboard
+  as_of: 2026-09-23
+verification: [score]
+verifier_access: public-code
+status_tracking: leaderboard
+submission: [pr]
+access: open
+license: MIT
+last_updated: 2026-09-23
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: medium
+  rationale: Needs training large models; the test set is fixed.
+contamination_risk: high
+notes: A benchmark, not an open problem. Latest model added on 2026-09-13.

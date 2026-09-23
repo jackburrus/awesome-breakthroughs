@@ -1,0 +1,27 @@
+id: weatherbench-2
+name: WeatherBench 2
+url: https://sites.research.google/gr/weatherbench/
+alt_urls:
+  - https://github.com/google-research/weatherbench2
+maintainer: Google Research
+description: Open framework and scorecards comparing ML and physics-based global weather models on medium-range (1 to 15 day) forecasts.
+field: earth-climate-energy
+subfield: [weather]
+granularity: benchmark
+size:
+  note: Headline deterministic and probabilistic scorecards on 2022 data, with ERA5 ground truth.
+  as_of: 2026-09-23
+verification: [score]
+verifier_access: public-code
+status_tracking: leaderboard
+submission: [issue]
+access: open
+license: Apache-2.0 (code)
+last_updated: 2026-09-10
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: low
+  rationale: A competitive model needs large-scale training on reanalysis data.
+contamination_risk: high
+notes: Evaluation code is now WeatherBench-X. New models are added through the documented process or a GitHub issue.

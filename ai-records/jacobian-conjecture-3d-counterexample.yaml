@@ -1,0 +1,14 @@
+id: jacobian-conjecture-3d-counterexample
+title: Reported counterexample to the Jacobian conjecture in three dimensions
+related_sources: []
+summary: Levent Alpöge presented an explicit counterexample to the Jacobian conjecture in three dimensions, saying it was found using Claude Fable 5.
+date: 2026-07-19
+system: Claude Fable 5
+level: claimed
+autonomy: human+ai
+secondhand: true
+evidence:
+  - https://arxiv.org/abs/2609.25050
+  - https://theconversation.com/hello-there-the-jacobian-conjecture-is-false-thanx-why-a-tiny-social-media-post-has-mathematicians-rethinking-ai-283883
+notes: Known here only through the FrontierMath Erdős paper and The Conversation, not from a primary write-up by the author. Pending review.
+last_checked: 2026-09-23

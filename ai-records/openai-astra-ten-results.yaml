@@ -1,0 +1,17 @@
+id: openai-astra-ten-results
+title: OpenAI Astra's ten results in mathematics and theoretical computer science
+related_sources: [erdos-problems]
+summary: "OpenAI published ten results produced with an unreleased Astra model, including sphere packing bounds, a non-sofic group and Erdős #146, #180 and #183, each with a Lean 4 formalization."
+date: 2026-08-01
+system: OpenAI Astra (pre-release)
+level: machine-checked
+autonomy: unknown
+evidence:
+  - https://openai.com/index/ten-advances-in-mathematics/
+  - https://github.com/openai/ten-proofs
+  - https://cdn.openai.com/pdf/ten-proofs-oai.pdf
+disputed: true
+dispute_evidence:
+  - https://www.scientificamerican.com/article/openais-latest-math-breakthroughs-commit-research-misconduct-experts-say/
+notes: Mathematicians quoted by Scientific American (2026-08-06) say the sphere-packing and non-sofic group results reuse earlier published work without proper credit. Press coverage says none of the ten had passed peer review as of September 2026. The Lean certificates check the formal statements, not novelty or credit. Press reports a compute cost of about $2,000, which could not be confirmed from a primary source.
+last_checked: 2026-09-23

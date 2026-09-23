@@ -1,0 +1,9 @@
+id: code-tables
+name: Code Tables
+url: https://www.codetables.de/
+field: mathematics
+reason: Unchecked (U) in the research.
+to_check:
+  - That Markus Grassl still maintains the tables, and the date of the last update.
+  - How new constructions are submitted.
+notes: Also linked from the Optimization Constants related-sites list.

@@ -1,0 +1,78 @@
+id: erdos-problems
+name: Erdős Problems
+url: https://www.erdosproblems.com/
+maintainer: Thomas Bloom
+description: Database of problems posed by Paul Erdős, with a status for each problem, a per-problem forum and Lean links where formalized.
+field: mathematics
+subfield: [combinatorics, number-theory, graph-theory]
+granularity: database
+size:
+  total: 1221
+  solved: 586
+  unit: problems
+  as_of: 2026-09-23
+  note: Homepage count. The OPEN -> SOLVED feed records when the site changed a status, not when the problem was solved.
+verification: [review, formal]
+proof_assistant: lean4
+verifier_access: none
+status_tracking: per-problem
+submission: [forum]
+access: open
+license: Site content; no open license stated
+ai_records:
+  - summary: "Erdős #728 answered by Kevin Barreto and Liam Price using GPT-5.2 Pro, with the proof checked by Harmonic's Aristotle. The site lists it as PROVED (LEAN)."
+    date: 2026-01-04
+    system: GPT-5.2 Pro; Harmonic Aristotle
+    level: source-accepted
+    autonomy: human+ai
+    evidence:
+      - https://www.erdosproblems.com/728
+      - https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803/
+    notes: Quanta reports an earlier claim by the same group, on problem 333, was withdrawn because Erdős had solved it in 1977.
+  - summary: Aletheia, a Gemini-based agent, was run on 700 problems marked open; the authors report 5 novel autonomous solutions and 8 problems already solved in the literature.
+    date: 2026-01-29
+    system: Aletheia (Gemini Deep Think)
+    level: claimed
+    autonomy: autonomous
+    disclosure: [denominator]
+    evidence:
+      - https://arxiv.org/abs/2601.22401
+    notes: The paper calls its method semi-autonomous; human experts judged correctness and novelty. The count of autonomous solutions was revised in later versions of the paper.
+  - summary: AlphaProof Nexus resolved 9 of 353 open Erdős problems it attempted, with Lean proofs and the full attempted list published.
+    date: 2026-05-21
+    system: AlphaProof Nexus
+    level: machine-checked
+    autonomy: autonomous
+    disclosure: [denominator, cost]
+    evidence:
+      - https://arxiv.org/abs/2605.22763
+      - https://github.com/google-deepmind/alphaproof-nexus-results
+  - summary: "Erdős #90, the unit distance conjecture, disproved by an internal OpenAI model. The site lists it as DISPROVED (LEAN)."
+    date: 2026-05-20
+    system: Internal OpenAI model
+    level: source-accepted
+    autonomy: unknown
+    evidence:
+      - https://www.erdosproblems.com/90
+      - https://openai.com/index/model-disproves-discrete-geometry-conjecture/
+    notes: Epoch AI reports the Lean formalization ran to about 1.2 million lines, against an 18-page natural-language proof.
+  - summary: "Erdős #146, #180 and #183 resolved by an internal OpenAI model as part of the ten Astra results; the site lists them as verified in Lean."
+    date: 2026-08-01
+    system: OpenAI Astra (pre-release)
+    level: source-accepted
+    autonomy: unknown
+    evidence:
+      - https://www.erdosproblems.com/183
+      - https://www.erdosproblems.com/146
+      - https://github.com/openai/ten-proofs
+    notes: See ai-records/openai-astra-ten-results.yaml. The credit dispute over that bundle concerns other results in it, not these three problems.
+last_updated: 2026-09-12
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: medium
+  rationale: Many problems are elementary to state and some fall to modest effort, but status changes need a human editor.
+contamination_risk: low
+agent_interfaces:
+  - https://github.com/google-deepmind/formal-conjectures
+notes: The forum has dedicated threads for AI contributions. Bloom estimated that 3 to 5 problems of FrontierMath Erdős calibre had been solved by AI as of August 2026 (Epoch AI).

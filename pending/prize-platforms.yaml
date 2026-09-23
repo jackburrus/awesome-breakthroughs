@@ -1,0 +1,6 @@
+id: prize-platforms
+name: Kaggle, DrivenData, HeroX and XPRIZE
+field: meta
+reason: Unchecked (U) in the research, which says to list individual research-grade competitions rather than whole platforms.
+to_check:
+  - Pick individual live competitions on these platforms that have a precise statement and a stated verifier, and propose each as its own source.

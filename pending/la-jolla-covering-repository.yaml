@@ -1,0 +1,10 @@
+id: la-jolla-covering-repository
+name: La Jolla Covering Repository
+url: https://ljcr.dmgordon.org/cover.html
+field: mathematics
+reason: Marked S in the research, but the URL did not respond on 2026-09-23 (connection failed on HTTPS and HTTP).
+to_check:
+  - Whether the site is back online, or has moved.
+  - The successor "Covering Repository" the research says is replacing it, and its URL.
+  - The Zenodo dataset (v1.1, April 2026) cited by the research.
+last_checked: 2026-09-23

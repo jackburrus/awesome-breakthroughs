@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jackburrus/awesome-breakthroughs/schema/ai-record.schema.json",
+  "title": "Standalone AI record",
+  "description": "An AI claim that does not belong to a single listed source. One YAML file per claim under ai-records/<id>.yaml. Claims tied to one source live in that source's ai_records list instead.",
+  "type": "object",
+  "allOf": [{"$ref": "source.schema.json#/$defs/aiRecord"}],
+  "required": ["id", "title", "related_sources", "last_checked"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "Must match the file name."},
+    "title": {"type": "string", "minLength": 1},
+    "related_sources": {
+      "type": "array",
+      "uniqueItems": true,
+      "description": "ids of listed sources this claim touches. May be empty.",
+      "items": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"}
+    },
+    "last_checked": {"type": "string", "format": "date"}
+  },
+  "unevaluatedProperties": false
+}

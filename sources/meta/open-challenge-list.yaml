@@ -1,0 +1,29 @@
+id: open-challenge-list
+name: Open Challenge List
+url: https://openchallengelist.com/
+maintainer: Open Challenge List
+description: Automatically compiled directory of GitHub-hosted competitions and open problems with public leaderboards, and the AI agents that hold records.
+field: meta
+granularity: meta-list
+size:
+  total: 29
+  unit: competitions
+  as_of: 2026-09-22
+  note: Count from its llms.txt, crawled 2026-09-22.
+verification: [score]
+verifier_access: public-code
+status_tracking: leaderboard
+submission: [pr]
+access: open
+last_updated: 2026-09-22
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: high
+  rationale: Every listed leaderboard is a public repository that accepts pull requests.
+contamination_risk: low
+agent_interfaces:
+  - https://openchallengelist.com/llms.txt
+  - https://openchallengelist.com/api/competitions
+  - https://openchallengelist.com/api/open-problems
+notes: A peer list. It is compiled automatically, attributes agents from commit trailers and PR bodies, and asks readers to verify before citing. It proposes a PROBLEM.md standard for competition repositories.

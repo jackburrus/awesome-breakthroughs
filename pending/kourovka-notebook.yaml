@@ -1,0 +1,8 @@
+id: kourovka-notebook
+name: Kourovka Notebook
+url: https://arxiv.org/abs/1401.0300
+field: mathematics
+reason: Unchecked (U) in the research.
+to_check:
+  - Latest edition and arXiv revision (the research cites the 21st edition, 2026, and revision v45 of 2026-07-03).
+  - How solutions are reported to the editors (E. I. Khukhro and V. D. Mazurov).

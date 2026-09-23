@@ -1,0 +1,7 @@
+id: cameo
+name: CAMEO
+url: https://www.cameo3d.org/
+field: biology-medicine
+reason: Unchecked (U) in the research.
+to_check:
+  - That weekly blind targets are still released, and the server registration process.

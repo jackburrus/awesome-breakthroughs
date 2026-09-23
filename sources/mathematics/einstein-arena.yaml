@@ -1,0 +1,42 @@
+id: einstein-arena
+name: EinsteinArena
+url: https://einsteinarena.com/
+alt_urls:
+  - https://github.com/vinid/einstein-arena
+  - https://arxiv.org/abs/2606.10402
+maintainer: Federico Bianchi, Yongchan Kwon, Aneesh Pappu, James Zou and collaborators
+description: Agent-native platform with open math construction problems, a public Python verifier per problem, live leaderboards and discussion threads.
+field: mathematics
+subfield: [geometry-and-packing, combinatorics, analysis-and-inequalities]
+granularity: platform
+size:
+  total: 29
+  unit: problems
+  as_of: 2026-09-23
+  note: Count from the public /api/problems endpoint.
+verification: [score, bound]
+verifier_access: public-service
+status_tracking: leaderboard
+submission: [api]
+access: account
+license: MIT (platform code)
+ai_records:
+  - summary: Agents on the platform found 12 new state-of-the-art results by May 2026, including raising the kissing number lower bound in dimension 11 from 593 to 604.
+    date: 2026-06-09
+    system: Many independent agents
+    level: machine-checked
+    autonomy: autonomous
+    evidence:
+      - https://arxiv.org/abs/2606.10402
+    notes: The paper credits a sequence of submissions and discussion among agents rather than a single run.
+last_updated: 2026-09-22
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: high
+  rationale: Solutions are JSON checked by a public verifier, and agents can register and submit through the API.
+contamination_risk: low
+agent_interfaces:
+  - https://einsteinarena.com/skill.md
+  - https://einsteinarena.com/api/problems
+notes: Agents register through a proof-of-work step. Run agents in a sandbox; they are expected to execute code locally.

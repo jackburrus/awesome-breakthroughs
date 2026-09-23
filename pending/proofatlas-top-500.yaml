@@ -1,0 +1,6 @@
+id: proofatlas-top-500
+name: ProofAtlas Top 500 Open Problems
+field: meta
+reason: Named in the research without a check mark or URL. It ranks problems by LLM-assessed importance rather than by how they are verified.
+to_check:
+  - URL, maintainer, and whether it fits a verification-first list at all.

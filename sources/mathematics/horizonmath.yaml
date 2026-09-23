@@ -1,0 +1,38 @@
+id: horizonmath
+name: HorizonMath
+url: https://github.com/ewang26/HorizonMath
+alt_urls:
+  - https://arxiv.org/abs/2603.15617
+  - https://ewang26.github.io/HorizonMath/
+maintainer: Erik Y. Wang et al. (Oxford, Harvard, Princeton, Ellison Institute)
+description: Mostly unsolved problems in computational and applied mathematics, each with an automatic verifier or best-known baseline.
+field: mathematics
+subfield: [combinatorics, number-theory, discrete-geometry]
+granularity: benchmark
+size:
+  total: 136
+  unit: problems
+  as_of: 2026-09-23
+  note: README count across 8 domains; the paper (v2, 2026-09-10) describes 113. Solvability level 0 problems are calibration items with known answers.
+verification: [score, bound]
+verifier_access: public-code
+status_tracking: per-problem
+submission: [self-run]
+access: open
+license: None stated
+ai_records:
+  - summary: The authors report six novel solutions that resolve open questions or improve best-known results, three each from GPT-5.4 Pro and GPT-5.6 Sol.
+    date: 2026-09-10
+    system: GPT-5.4 Pro; GPT-5.6 Sol
+    level: claimed
+    autonomy: unknown
+    evidence:
+      - https://arxiv.org/abs/2603.15617
+last_updated: 2026-09-09
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: high
+  rationale: Chosen so that finding a solution is hard but checking one is cheap.
+contamination_risk: none
+notes: Some validators need SageMath.

@@ -1,0 +1,45 @@
+id: frontiermath-open-problems
+name: "FrontierMath: Open Problems"
+url: https://epoch.ai/frontiermath/open-problems
+maintainer: Epoch AI
+description: Unsolved research problems with bespoke programmatic verifiers, tiered by significance from moderately interesting to breakthrough.
+field: mathematics
+subfield: [number-theory, combinatorics, arithmetic-geometry]
+granularity: benchmark
+size:
+  total: 49
+  open: 41
+  solved: 8
+  unit: problems
+  as_of: 2026-09-23
+  note: 4 marked Solved (AI) and 4 Solved (human + AI). Expanded to 50 on 2026-07-31, one removed on 2026-09-16. Problems are added and removed over time.
+verification: [score]
+verifier_access: paid
+status_tracking: per-problem
+submission: [form]
+access: open
+ai_records:
+  - summary: The Core in Approval-Based Committee Elections (a Major advance problem) solved by Becker, Greger and Peters with GPT-6 Astra in a long interactive session.
+    date: 2026-09-16
+    system: GPT-6 Astra
+    level: source-accepted
+    autonomy: human+ai
+    evidence:
+      - https://epoch.ai/frontiermath/open-problems/committee-election
+    notes: The authors credit the main idea and proof to the model. Epoch marks it human + AI because the model did not solve it from a simple prompt. The date is when Epoch published the human + AI label.
+  - summary: Hadamard matrix of order 668 solved, reported by an Anthropic researcher crediting three humans and Claude.
+    date: 2026-08-12
+    system: Claude (internal Anthropic model)
+    level: source-accepted
+    autonomy: human+ai
+    evidence:
+      - https://epoch.ai/frontiermath/open-problems/hadamard
+    notes: First marked solved by AI on 2026-08-12, then labelled human + AI under the 2026-09-16 policy change.
+last_updated: 2026-09-16
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: medium
+  rationale: Problems are public, but only buyers of verifier access can check solutions themselves.
+contamination_risk: none
+notes: Verifier access is sold; Epoch says OpenAI is the only buyer so far. Since 2026-09-16 Epoch labels a problem human + AI when AI was instrumental but did not solve it alone, and suggests counting these as AI solutions when a binary is needed.

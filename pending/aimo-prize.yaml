@@ -1,0 +1,7 @@
+id: aimo-prize
+name: AIMO Prize
+url: https://aimoprize.com/
+field: ai-ml
+reason: Unchecked (U) in the research.
+to_check:
+  - Current progress prize, dates and Kaggle entry.

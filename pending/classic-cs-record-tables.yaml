@@ -1,0 +1,10 @@
+id: classic-cs-record-tables
+name: Classic CS record tables (sorting networks, TSPLIB, DIMACS coloring, Taillard job shop)
+field: computer-science
+reason: Unchecked (U) in the research, which says each needs its own entry and check.
+to_check:
+  - A current URL and maintainer for the sorting network size and depth records.
+  - TSPLIB and Concorde best-known tours.
+  - DIMACS graph coloring best-known values.
+  - Taillard job shop best-known makespans.
+  - Which of these are stale.

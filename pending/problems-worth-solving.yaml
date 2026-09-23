@@ -1,0 +1,7 @@
+id: problems-worth-solving
+name: Problems Worth Solving
+url: https://github.com/futurelabstudios/problems-worth-solving
+field: meta
+reason: The research says it was not verified and should be checked by hand.
+to_check:
+  - Whether it is maintained, and whether its problems have stated verifiers.

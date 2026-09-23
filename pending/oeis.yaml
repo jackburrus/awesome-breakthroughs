@@ -1,0 +1,10 @@
+id: oeis
+name: OEIS (On-Line Encyclopedia of Integer Sequences)
+url: https://oeis.org/
+field: mathematics
+reason: The research marked the URL unchecked (U) and its AI note secondhand (S).
+to_check:
+  - Current sequence count and date (the research cites 399,018 from a page footer).
+  - How open conjectures are marked in entries, and the editorial approval process.
+  - The report that some entries say a result was proved by an autonomous AI agent with a Lean file; find a primary example.
+notes: The homepage answered HTTP 200 on 2026-09-23, but no facts were checked.

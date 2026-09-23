@@ -1,0 +1,32 @@
+id: formal-conjectures
+name: Formal Conjectures
+url: https://github.com/google-deepmind/formal-conjectures
+maintainer: Google DeepMind and contributors
+description: Lean 4 statements of open and solved conjectures from Erdős Problems, OEIS, Wikipedia, MathOverflow and papers, tagged by status.
+field: mathematics
+subfield: [formal-statements]
+granularity: database
+size:
+  total: 2615
+  open: 1029
+  solved: 836
+  unit: formal statements
+  as_of: 2026-05-13
+  note: Counts from the paper (arXiv 2605.13171). The repository grows weekly.
+verification: [formal]
+proof_assistant: lean4
+verifier_access: public-code
+status_tracking: per-problem
+submission: [issue, pr]
+access: open
+license: Apache-2.0
+last_updated: 2026-09-23
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: high
+  rationale: Statements are machine-readable and a proof is checked by lake build, but a proof can still target a misformalized statement.
+contamination_risk: none
+agent_interfaces:
+  - https://github.com/google-deepmind/formal-conjectures
+notes: Status is recorded with the @[category] attribute (research open or research solved). Statements are reviewed by people, and the maintainers warn that some may be misformalized.

@@ -1,0 +1,8 @@
+id: matrix-multiplication-exponent
+name: Matrix multiplication exponent and small tensor ranks
+url: https://en.wikipedia.org/wiki/Computational_complexity_of_matrix_multiplication
+field: computer-science
+reason: Unchecked (U) in the research, and there is no single maintained registry to point to.
+to_check:
+  - A maintained source for record bounds on omega and for small tensor ranks.
+  - Whether the Optimization Constants entry C15a already covers the headline bound.

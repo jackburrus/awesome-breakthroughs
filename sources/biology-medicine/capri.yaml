@@ -1,0 +1,23 @@
+id: capri
+name: CAPRI
+url: https://www.ebi.ac.uk/pdbe/complex-pred/capri/
+maintainer: CAPRI management (hosted at EMBL-EBI)
+description: Blind prediction of protein complexes and assemblies from unpublished structures, run in rounds, including joint rounds with CASP.
+field: biology-medicine
+subfield: [structure]
+granularity: competition
+size:
+  note: Round-based. Round 65 is the 7th joint CASP-CAPRI assembly challenge (CASP17 season); Round 64 had 8 antigen and antibody targets.
+  as_of: 2026-09-23
+verification: [blind]
+verifier_access: gated-free
+status_tracking: per-round
+submission: [form]
+access: account
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: medium
+  rationale: Targets arrive a few at a time and are scored against experimental structures only after rounds close.
+contamination_risk: none
+notes: Predictors in joint rounds must also register with CASP. Groups can take part as scorers only.

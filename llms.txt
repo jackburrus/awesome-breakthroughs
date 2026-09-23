@@ -1,0 +1,67 @@
+# awesome-breakthroughs
+
+> Curated, verification-first index of open-problem sources where AI agents can make checkable progress. 34 sources across 7 fields, each checked by hand; latest check 2026-09-23. Data is CC0-1.0.
+
+Every source records how solutions are verified (formal, score, bound, review, blind or self-reported), whether you can run the verifier yourself (verifier_access), and how to submit. AI claims carry an evidence level (claimed, machine-checked, source-accepted, peer-reviewed) and an autonomy label (autonomous, human+ai, human-led-ai-tools, unknown). Treat anything below source-accepted as unconfirmed.
+
+## Data
+
+- [problems.json](https://raw.githubusercontent.com/jackburrus/awesome-breakthroughs/main/dist/problems.json): every source, AI record and pending candidate as JSON
+- [source schema](https://raw.githubusercontent.com/jackburrus/awesome-breakthroughs/main/schema/source.schema.json): field definitions, including the evidence ladder
+- [README](https://github.com/jackburrus/awesome-breakthroughs#readme): the same list as tables
+- [CONTRIBUTING](https://github.com/jackburrus/awesome-breakthroughs/blob/main/CONTRIBUTING.md): how to add or update a source
+
+## Mathematics
+
+- [AI Has Taste](https://github.com/ArtificialZeng/AI-Has-Taste): Self-published archive of research manuscripts produced by AI agents on open math problems, including proofs, disproofs and AI-proposed conjectures. Verification: self-reported. Verifier access: none. Submit via: pr. Lifecycle: active.
+- [AlphaEvolve repository of problems](https://github.com/google-deepmind/alphaevolve_repository_of_problems): A page per problem, with Colab notebooks holding the prompt, verification code, starting program and evolved program. Verification: score, bound. Verifier access: public-code. Submit via: pr, email. Lifecycle: active.
+- [AlphaProof Nexus results](https://github.com/google-deepmind/alphaproof-nexus-results): Lean proofs found by AlphaProof Nexus, prose proofs, and the full list of attempted Erdős and OEIS problems, including the unsolved ones. Verification: formal. Verifier access: public-code. Submit via: closed. Lifecycle: active.
+- [Busy Beaver Challenge](https://bbchallenge.org/): Collaborative project to decide halting for small Turing machines. BB(5) = 47,176,870 was proved in Rocq; BB(6) holdouts remain. Verification: formal, bound. Verifier access: public-code. Submit via: forum, pr. Lifecycle: active.
+- [CayleyPy Pancake sorting](https://www.kaggle.com/competitions/CayleyPy-pancake): Kaggle community competition to find shorter prefix-reversal (pancake) sorting paths, that is, shorter paths in a Cayley graph. Verification: score. Verifier access: public-service. Submit via: leaderboard-upload. Lifecycle: active.
+- [EinsteinArena](https://einsteinarena.com/): Agent-native platform with open math construction problems, a public Python verifier per problem, live leaderboards and discussion threads. Verification: score, bound. Verifier access: public-service. Submit via: api. Lifecycle: active.
+- [Erdős Problems](https://www.erdosproblems.com/): Database of problems posed by Paul Erdős, with a status for each problem, a per-problem forum and Lean links where formalized. Verification: review, formal. Verifier access: none. Submit via: forum. Lifecycle: active.
+- [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures): Lean 4 statements of open and solved conjectures from Erdős Problems, OEIS, Wikipedia, MathOverflow and papers, tagged by status. Verification: formal. Verifier access: public-code. Submit via: issue, pr. Lifecycle: active.
+- [FrontierMath Erdős](https://epoch.ai/latest/announcing-frontiermath-erdos): 68 significant Erdős problems, open as of August 2026 and chosen by Bloom, formalized in Lean. Each attempt has a fixed budget. Verification: formal. Verifier access: public-code. Submit via: self-run. Lifecycle: active.
+- [FrontierMath: Open Problems](https://epoch.ai/frontiermath/open-problems): Unsolved research problems with bespoke programmatic verifiers, tiered by significance from moderately interesting to breakthrough. Verification: score. Verifier access: paid. Submit via: form. Lifecycle: active.
+- [Game of Sloanes](https://github.com/gnikylime/GameofSloanes): Leaderboard of best known packings of lines in complex projective space (Grassmannian frames), with open conjectures on optimality. Verification: bound. Verifier access: none. Submit via: pr. Lifecycle: active.
+- [HorizonMath](https://github.com/ewang26/HorizonMath): Mostly unsolved problems in computational and applied mathematics, each with an automatic verifier or best-known baseline. Verification: score, bound. Verifier access: public-code. Submit via: self-run. Lifecycle: active.
+- [Leaps in Bounds](https://leapsinbounds.org/): Collaborative record of historical progress on bounds for mathematical constants, with browsing, plots and downloadable structured data. Verification: bound, review. Verifier access: none. Submit via: issue, forum, email. Lifecycle: active.
+- [OEIS Open](https://github.com/epoch-research/LeanOpenProblems): Open-source harness that runs any language model on 492 Lean-formalized OEIS conjectures, plus a 100-problem Lite subset. Verification: formal. Verifier access: public-code. Submit via: self-run. Lifecycle: active.
+- [Optimization Constants in Mathematics](https://github.com/teorth/optimizationproblems): Best known upper and lower bounds on constants from variational problems and inequalities, with a changelog of recent progress. Verification: bound, review. Verifier access: none. Submit via: pr. Lifecycle: active.
+- [RakeSearch](https://rake.boincfast.ru/rakesearch/): Volunteer computing project that searches for pairs of mutually orthogonal diagonal Latin squares and ranks squares by their orthogonal mates. Verification: bound. Verifier access: none. Submit via: volunteer-compute. Lifecycle: active.
+- [Small Ramsey Numbers (dynamic survey DS1)](https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS1): Dynamic survey of all known nontrivial values and bounds for small graph, hypergraph and multicolor Ramsey numbers, with references. Verification: bound, review. Verifier access: none. Submit via: publish-then-notify. Lifecycle: active.
+- [UQ (Unsolved Questions)](https://uq.stanford.edu/): 500 unsolved Stack Exchange questions, from CS theory and math to history, with validator screening and community verification of answers. Verification: review. Verifier access: public-service. Submit via: self-run, email. Lifecycle: slow.
+
+## Computer science
+
+- [CVRPLIB](https://galgos.inf.puc-rio.br/cvrplib/index.php/en/): Capacitated vehicle routing instances with best known solutions, a solution checker, and a log of every improvement. Verification: bound. Verifier access: public-service. Submit via: email. Lifecycle: active.
+- [MIPLIB 2017](https://miplib.zib.de/): Mixed integer programming library whose instances are tagged easy, hard or open, with a solution checker and periodic solution updates. Verification: bound. Verifier access: public-code. Submit via: email. Lifecycle: active.
+- [QAPLIB](https://coral.ise.lehigh.edu/data-sets/qaplib/): Quadratic assignment problem instances with best known solutions and lower bounds. Verification: bound. Verifier access: none. Submit via: email. Lifecycle: stale.
+- [SAT Competition 2026](https://satcompetition.github.io/2026/): Annual SAT solver competition with Main, Parallel, Experimental and Cloud tracks, and separate sub-tracks for AI-generated and AI-tuned solvers. Verification: score, blind. Verifier access: public-code. Submit via: form. Lifecycle: active.
+
+## Biology and medicine
+
+- [Adaptyv protein design competitions (Proteinbase)](https://proteinbase.com/competitions): Protein design competitions in which Adaptyv makes and tests the selected designs in its own wet lab and publishes every result, including failures. Verification: blind. Verifier access: gated-free. Submit via: leaderboard-upload. Lifecycle: active.
+- [CAPRI](https://www.ebi.ac.uk/pdbe/complex-pred/capri/): Blind prediction of protein complexes and assemblies from unpublished structures, run in rounds, including joint rounds with CASP. Verification: blind. Verifier access: gated-free. Submit via: form. Lifecycle: active.
+- [CASP17](https://predictioncenter.org/casp17/index.cgi): Biennial blind prediction of protein, RNA, complex and ligand structures, assessed against experimental structures not yet public. Verification: blind. Verifier access: gated-free. Submit via: form, api. Lifecycle: active.
+- [Polaris Hub](https://polarishub.io/): Benchmarking platform for machine learning in drug discovery, with shared datasets, benchmarks and competitions, used through a Python client. Verification: score. Verifier access: public-code. Submit via: api. Lifecycle: slow.
+- [Therapeutics Data Commons (TDC)](https://tdcommons.ai/): AI-ready drug discovery datasets, tasks and leaderboards with fixed data splits and evaluators, accessed through a Python library. Verification: score. Verifier access: public-code. Submit via: form, pr. Lifecycle: slow.
+- [Virtual Cell Challenge 2026](https://virtualcellchallenge.org/): Predict how six cell lines respond to specified gene knockdowns, zero-shot, scored against new Arc Institute perturbation data. Verification: blind. Verifier access: gated-free. Submit via: leaderboard-upload. Lifecycle: active.
+
+## Chemistry and materials
+
+- [FAIR Chemistry Leaderboard](https://huggingface.co/spaces/facebook/fairchem_leaderboard): Leaderboards for machine-learned potentials on OMol25 (molecules) and OC20 (catalysts), including energy, forces and downstream chemistry tasks. Verification: score. Verifier access: public-service. Submit via: leaderboard-upload. Lifecycle: active.
+- [Matbench Discovery](https://matbench-discovery.materialsproject.org/): Leaderboard of machine-learned interatomic potentials on crystal stability discovery, geometry optimization, phonons and molecular dynamics. Verification: score. Verifier access: public-code. Submit via: pr. Lifecycle: active.
+
+## Earth, climate and energy
+
+- [Operational WeatherBench](https://owb.brightband.com/): Live scores for AI and physics-based weather models on real forecasts, computed with WeatherBench-X as each cycle verifies. Verification: blind, score. Verifier access: public-code. Submit via: email. Lifecycle: active.
+- [WeatherBench 2](https://sites.research.google/gr/weatherbench/): Open framework and scorecards comparing ML and physics-based global weather models on medium-range (1 to 15 day) forecasts. Verification: score. Verifier access: public-code. Submit via: issue. Lifecycle: active.
+
+## AI and machine learning
+
+- [ARC Prize 2026](https://arcprize.org/competitions/2026): Prize competition on ARC-AGI-3 interactive environments and ARC-AGI-2, plus a paper award. Winning solutions must be open-sourced. Verification: blind. Verifier access: gated-free. Submit via: leaderboard-upload. Lifecycle: active.
+
+## Other lists
+
+- [Open Challenge List](https://openchallengelist.com/): Automatically compiled directory of GitHub-hosted competitions and open problems with public leaderboards, and the AI agents that hold records. Verification: score. Verifier access: public-code. Submit via: pr. Lifecycle: active.

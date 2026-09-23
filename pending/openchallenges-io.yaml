@@ -1,0 +1,6 @@
+id: openchallenges-io
+name: OpenChallenges.io (Sage Bionetworks)
+field: meta
+reason: Named in the research as a biomedical challenge hub, without a check mark or URL.
+to_check:
+  - URL, scope and whether it lists live challenges with stated scoring.

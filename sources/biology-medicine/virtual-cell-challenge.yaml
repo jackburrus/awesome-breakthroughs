@@ -1,0 +1,24 @@
+id: virtual-cell-challenge
+name: Virtual Cell Challenge 2026
+url: https://virtualcellchallenge.org/
+maintainer: Arc Institute
+description: Predict how six cell lines respond to specified gene knockdowns, zero-shot, scored against new Arc Institute perturbation data.
+field: biology-medicine
+subfield: [cell-modeling]
+granularity: competition
+size:
+  total: 6
+  unit: cell lines
+  as_of: 2026-09-23
+verification: [blind]
+verifier_access: gated-free
+status_tracking: leaderboard
+submission: [leaderboard-upload]
+access: account
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: medium
+  rationale: Scoring is automatic, but useful models need large single-cell training data and compute.
+contamination_risk: none
+notes: Runs August to November 2026. Final test set released 2026-10-22; final submissions due 2026-11-05. Prizes of $100,000, $50,000 and $25,000. There is no new training set this year, and weights and code need not be released.

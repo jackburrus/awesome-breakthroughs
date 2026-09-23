@@ -1,0 +1,26 @@
+id: ai-has-taste
+name: AI Has Taste
+url: https://github.com/ArtificialZeng/AI-Has-Taste
+maintainer: ArtificialZeng
+description: Self-published archive of research manuscripts produced by AI agents on open math problems, including proofs, disproofs and AI-proposed conjectures.
+field: mathematics
+granularity: meta-list
+size:
+  total: 453
+  unit: manuscripts
+  as_of: 2026-09-23
+  note: README count. The repository description says 200+ open problems.
+verification: [self-reported]
+verifier_access: none
+status_tracking: none
+submission: [pr]
+access: open
+license: None stated
+last_updated: 2026-09-16
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: low
+  rationale: An archive of claims, not a problem set; each claim needs independent checking.
+contamination_risk: high
+notes: None of the claims here are independently verified. Treat every result as claimed until an upstream source accepts it.

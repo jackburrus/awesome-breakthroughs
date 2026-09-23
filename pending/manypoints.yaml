@@ -1,0 +1,8 @@
+id: manypoints
+name: manYPoints
+url: https://manypoints.org/
+field: mathematics
+reason: Unchecked (U) in the research.
+to_check:
+  - Maintainers, submission route and last update.
+notes: Tao's related-sites list links https://manypoints.org/Info.aspx.

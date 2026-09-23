@@ -1,0 +1,42 @@
+id: frontiermath-erdos
+name: FrontierMath Erdős
+url: https://epoch.ai/latest/announcing-frontiermath-erdos
+alt_urls:
+  - https://arxiv.org/abs/2609.25050
+maintainer: Epoch AI with Thomas Bloom
+description: 68 significant Erdős problems, open as of August 2026 and chosen by Bloom, formalized in Lean. Each attempt has a fixed budget.
+field: mathematics
+subfield: [combinatorics, number-theory]
+granularity: benchmark
+size:
+  total: 68
+  unit: problems
+  as_of: 2026-09-06
+  note: Chosen from 652 open problems. 50 statements come from Formal Conjectures and 18 were formalized with AI help and are awaiting expert review.
+verification: [formal]
+proof_assistant: lean4
+verifier_access: public-code
+status_tracking: per-problem
+submission: [self-run]
+access: open
+license: See the LeanOpenProblems repository (MIT)
+ai_records:
+  - summary: "In the benchmark run, a pre-release GPT-6 Astra solved 2 of 68 problems (disproved #74, proved #126) within $300 per problem; four other models solved none."
+    date: 2026-09-01
+    system: GPT-6 Astra (pre-release)
+    level: source-accepted
+    autonomy: autonomous
+    disclosure: [denominator, cost]
+    evidence:
+      - https://epoch.ai/latest/announcing-frontiermath-erdos
+      - https://arxiv.org/abs/2609.25050
+    notes: "Proofs are checked with the Lean FRO's Comparator. Erdős Problems changed #74 and #126 to solved on 2026-09-03."
+last_updated: 2026-09-06
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: low
+  rationale: Chosen for significance and difficulty. A solution also has to be formalized in Lean, which can be a large project on its own.
+contamination_risk: low
+agent_interfaces:
+  - https://github.com/epoch-research/LeanOpenProblems

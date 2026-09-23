@@ -1,0 +1,25 @@
+id: game-of-sloanes
+name: Game of Sloanes
+url: https://github.com/gnikylime/GameofSloanes
+maintainer: John Jasper, Emily J. King and Dustin G. Mixon
+description: Leaderboard of best known packings of lines in complex projective space (Grassmannian frames), with open conjectures on optimality.
+field: mathematics
+subfield: [geometry-and-packing]
+granularity: record-table
+size:
+  note: Packings of n vectors in dimension d for 2 <= d <= 7 and d+2 <= n <= 49, plus sporadic cases.
+  as_of: 2026-09-23
+verification: [bound]
+verifier_access: none
+status_tracking: per-problem
+submission: [pr]
+access: open
+license: CC-BY-4.0
+last_updated: 2026-04-28
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: high
+  rationale: A new packing only has to beat the listed coherence in the eighth decimal place, which is easy to check.
+contamination_risk: low
+notes: Submit a text file of vector coordinates by pull request to the SubmittedPackings directory.

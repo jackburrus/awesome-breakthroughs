@@ -1,0 +1,8 @@
+id: narrow-admissible-tuples
+name: Narrow admissible tuples
+url: https://math.mit.edu/~primegaps/
+field: mathematics
+reason: Unchecked (U) in the research.
+to_check:
+  - Whether Andrew Sutherland's tables still accept new tuples, and how.
+  - Date of the last update.

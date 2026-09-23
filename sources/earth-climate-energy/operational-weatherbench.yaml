@@ -1,0 +1,25 @@
+id: operational-weatherbench
+name: Operational WeatherBench
+url: https://owb.brightband.com/
+maintainer: Brightband
+description: Live scores for AI and physics-based weather models on real forecasts, computed with WeatherBench-X as each cycle verifies.
+field: earth-climate-energy
+subfield: [weather]
+granularity: benchmark
+size:
+  note: Continuous; ranked by forecast cycle over the last 30 days.
+  as_of: 2026-09-23
+verification: [blind, score]
+verifier_access: public-code
+status_tracking: leaderboard
+submission: [email]
+access: open
+license: CC-BY-4.0 (site)
+last_updated: 2026-09-15
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: low
+  rationale: Scores future weather, so it cannot be gamed, but entrants need an operational forecast model.
+contamination_risk: none
+notes: To propose a model, contact Brightband. On 2026-09-23 the latest ranked cycle was 15 Sep 2026 12Z, with WeatherNext3 Mean (Google DeepMind) on the active win streak.

@@ -1,0 +1,30 @@
+id: busy-beaver-challenge
+name: Busy Beaver Challenge
+url: https://bbchallenge.org/
+alt_urls:
+  - https://wiki.bbchallenge.org/wiki/Main_Page
+maintainer: bbchallenge community
+description: Collaborative project to decide halting for small Turing machines. BB(5) = 47,176,870 was proved in Rocq; BB(6) holdouts remain.
+field: mathematics
+subfield: [logic-and-computability]
+granularity: database
+size:
+  total: 855
+  open: 855
+  unit: BB(6) holdout machines, up to equivalence
+  as_of: 2026-09-15
+  note: 1,802 machines without reducing by equivalence, per the wiki's BB(6) page in mid-September 2026.
+verification: [formal, bound]
+proof_assistant: rocq
+verifier_access: public-code
+status_tracking: per-problem
+submission: [forum, pr]
+access: open
+last_updated: 2026-09-23
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: medium
+  rationale: Deciders can clear many machines automatically, but the remaining cryptids are Collatz-like and mathematically hard.
+contamination_risk: none
+notes: Work happens on Discord, the forum, the wiki and GitHub. The research that seeded this list also placed Busy Beaver under computer science.

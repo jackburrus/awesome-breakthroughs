@@ -1,0 +1,24 @@
+id: casp17
+name: CASP17
+url: https://predictioncenter.org/casp17/index.cgi
+maintainer: Protein Structure Prediction Center
+description: Biennial blind prediction of protein, RNA, complex and ligand structures, assessed against experimental structures not yet public.
+field: biology-medicine
+subfield: [structure]
+granularity: competition
+size:
+  note: Targets were released from late April to July 31, 2026. CASP16 in 2024 had 150+ targets and over 120,000 models.
+  as_of: 2026-09-23
+verification: [blind]
+verifier_access: gated-free
+status_tracking: per-round
+submission: [form, api]
+access: account
+last_updated: 2026-09-11
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: medium
+  rationale: Deep learning dominates, but only every two years, and CASP16 suggested a plateau.
+contamination_risk: none
+notes: The CASP17 prediction season is over. Results come out the day before the conference (listed for December 2026). The next chance to take part is CASP18.

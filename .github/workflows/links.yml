@@ -1,0 +1,35 @@
+name: Links
+
+on:
+  pull_request:
+    paths:
+      - "sources/**"
+      - "ai-records/**"
+      - "templates/**"
+      - "README.md"
+      - ".lychee.toml"
+      - ".github/workflows/links.yml"
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config .lychee.toml --root-dir "${{ github.workspace }}" README.md "sources/**/*.yaml" "ai-records/*.yaml"
+          output: lychee-report.md
+          fail: true
+      - name: Open an issue for broken links found by the weekly run
+        if: failure() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue create --repo "${{ github.repository }}" --title "Broken links found on $(date -u +%F)" --body-file lychee-report.md

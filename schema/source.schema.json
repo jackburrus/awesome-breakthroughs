@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jackburrus/awesome-breakthroughs/schema/source.schema.json",
+  "title": "Open-problem source",
+  "description": "One source of open problems where solutions can be checked. One YAML file per source under sources/<field>/<id>.yaml.",
+  "type": "object",
+  "required": [
+    "id", "name", "url", "maintainer", "description", "field", "granularity", "size",
+    "verification", "verifier_access", "status_tracking", "submission", "access",
+    "last_checked", "lifecycle", "tractability", "contamination_risk"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "Must match the file name."},
+    "name": {"type": "string", "minLength": 1},
+    "url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "alt_urls": {"type": "array", "items": {"type": "string", "format": "uri", "pattern": "^https?://"}},
+    "maintainer": {"type": "string", "minLength": 1},
+    "description": {"type": "string", "minLength": 10, "maxLength": 200},
+    "field": {"$ref": "#/$defs/field"},
+    "subfield": {"type": "array", "items": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"}},
+    "granularity": {
+      "enum": ["single-problem", "database", "record-table", "benchmark", "competition", "platform", "meta-list"]
+    },
+    "size": {
+      "type": "object",
+      "description": "How big the source is. Counts change often, so as_of is always required.",
+      "required": ["as_of"],
+      "anyOf": [{"required": ["total"]}, {"required": ["note"]}],
+      "additionalProperties": false,
+      "properties": {
+        "total": {"type": "integer", "minimum": 0},
+        "open": {"type": "integer", "minimum": 0},
+        "solved": {"type": "integer", "minimum": 0},
+        "unit": {"type": "string", "description": "What total counts, such as problems, instances or constants."},
+        "as_of": {"type": "string", "format": "date"},
+        "note": {"type": "string"}
+      }
+    },
+    "verification": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "description": "How a solution is checked. formal: proof assistant. score: automatic scoring function. bound: numeric record with a checker. review: human referee or editor. blind: held-out test, future data or wet lab. self-reported: no independent check.",
+      "items": {"enum": ["formal", "score", "bound", "review", "blind", "self-reported"]}
+    },
+    "proof_assistant": {"enum": ["lean4", "rocq", "isabelle", "none"]},
+    "verifier_access": {
+      "description": "Whether you can run the check yourself. public-code: verifier code is published. public-service: a public service checks submissions. gated-free: free but needs registration. paid: verifier must be bought. none: no verifier, a person decides.",
+      "enum": ["public-code", "public-service", "gated-free", "paid", "none"]
+    },
+    "status_tracking": {"enum": ["per-problem", "per-round", "leaderboard", "none"]},
+    "submission": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "pr", "issue", "forum", "email", "form", "api", "leaderboard-upload",
+          "publish-then-notify", "self-run", "volunteer-compute", "closed"
+        ]
+      }
+    },
+    "access": {"enum": ["open", "account", "gated", "paid"]},
+    "license": {"type": "string"},
+    "ai_records": {"type": "array", "items": {"$ref": "#/$defs/aiRecord", "unevaluatedProperties": false}},
+    "last_updated": {"type": "string", "format": "date", "description": "When the source itself last changed, as far as we could see."},
+    "last_checked": {"type": "string", "format": "date", "description": "When a contributor last opened the URL and checked the facts in this file."},
+    "lifecycle": {"enum": ["active", "slow", "stale", "archived", "superseded"]},
+    "superseded_by": {"type": "string"},
+    "tractability": {
+      "type": "object",
+      "required": ["level", "rationale"],
+      "additionalProperties": false,
+      "properties": {
+        "level": {"enum": ["high", "medium", "low"]},
+        "rationale": {"type": "string", "minLength": 1}
+      }
+    },
+    "contamination_risk": {
+      "description": "none: answers are genuinely unknown. low: answers are unknown but related material is public. high: test data or answers are public.",
+      "enum": ["none", "low", "high"]
+    },
+    "agent_interfaces": {"type": "array", "items": {"type": "string", "format": "uri", "pattern": "^https?://"}},
+    "notes": {"type": "string"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"lifecycle": {"const": "superseded"}}, "required": ["lifecycle"]},
+      "then": {"required": ["superseded_by"]}
+    }
+  ],
+  "$defs": {
+    "field": {
+      "enum": [
+        "mathematics", "computer-science", "physics-astronomy", "biology-medicine",
+        "chemistry-materials", "earth-climate-energy", "ai-ml", "meta"
+      ]
+    },
+    "aiRecord": {
+      "type": "object",
+      "description": "One claim that an AI system made progress. level is the evidence ladder; autonomy is who did the work.",
+      "required": ["summary", "date", "level", "autonomy", "evidence"],
+      "properties": {
+        "summary": {"type": "string", "minLength": 1},
+        "date": {"type": "string", "format": "date"},
+        "system": {"type": "string"},
+        "level": {
+          "description": "claimed: stated by the claimant only. machine-checked: a Lean proof or public verifier passes. source-accepted: the source's maintainer checked it and recorded it. peer-reviewed: published after peer review.",
+          "enum": ["claimed", "machine-checked", "source-accepted", "peer-reviewed"]
+        },
+        "autonomy": {
+          "description": "autonomous: the AI did the work without human direction beyond the task. human+ai: AI was instrumental but humans directed it (Epoch AI's definition). human-led-ai-tools: humans did the work with AI tools. unknown: not disclosed.",
+          "enum": ["autonomous", "human+ai", "human-led-ai-tools", "unknown"]
+        },
+        "disclosure": {
+          "type": "array",
+          "uniqueItems": true,
+          "description": "denominator: the full attempted set, including failures, is published. cost: compute or dollar cost is published. prompts: prompts or scaffolding are published.",
+          "items": {"enum": ["denominator", "cost", "prompts"]}
+        },
+        "evidence": {"type": "array", "minItems": 1, "items": {"type": "string", "format": "uri", "pattern": "^https?://"}},
+        "secondhand": {"type": "boolean", "description": "True when the evidence reports the claim rather than making it."},
+        "disputed": {"type": "boolean"},
+        "dispute_evidence": {"type": "array", "items": {"type": "string", "format": "uri", "pattern": "^https?://"}},
+        "notes": {"type": "string"}
+      },
+      "if": {"properties": {"disputed": {"const": true}}, "required": ["disputed"]},
+      "then": {"required": ["dispute_evidence"], "properties": {"dispute_evidence": {"minItems": 1}}}
+    }
+  }
+}

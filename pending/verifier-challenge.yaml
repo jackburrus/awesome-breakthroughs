@@ -1,0 +1,9 @@
+id: verifier-challenge
+name: Verifier Challenge
+url: https://verifierchallenge.org/
+field: ai-ml
+reason: Marked S in the research. On 2026-09-23 the site describes a planned open competition and a prototype, not a live challenge with a verifier.
+to_check:
+  - Whether the competition has opened, with a task statement and scoring.
+last_checked: 2026-09-23
+notes: Run by Jason Hausenloy and Jasmine Li. The prototype traces are published on Hugging Face under CC-BY-4.0.

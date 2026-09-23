@@ -1,0 +1,27 @@
+id: miplib-2017
+name: MIPLIB 2017
+url: https://miplib.zib.de/
+maintainer: Zuse Institute Berlin (Ambros Gleixner and Mark Turner)
+description: Mixed integer programming library whose instances are tagged easy, hard or open, with a solution checker and periodic solution updates.
+field: computer-science
+subfield: [combinatorial-optimization]
+granularity: record-table
+size:
+  total: 1065
+  open: 217
+  unit: instances in the collection set
+  as_of: 2026-09-23
+  note: The benchmark set has 240 instances. The open count is from the site's open tag page.
+verification: [bound]
+verifier_access: public-code
+status_tracking: per-problem
+submission: [email]
+access: open
+last_updated: 2026-01-26
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: high
+  rationale: Better incumbents on open instances are easy to check with the published solution checker.
+contamination_risk: low
+notes: Send new solutions to miplibsolutions@zib.de. Solufile 36 (2026-01-26) added 40 better incumbents.

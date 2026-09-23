@@ -1,0 +1,38 @@
+id: alphaevolve-problems
+name: AlphaEvolve repository of problems
+url: https://github.com/google-deepmind/alphaevolve_repository_of_problems
+alt_urls:
+  - https://google-deepmind.github.io/alphaevolve_repository_of_problems/
+maintainer: Google DeepMind (Georgiev, Gómez-Serrano, Tao, Wagner)
+description: A page per problem, with Colab notebooks holding the prompt, verification code, starting program and evolved program.
+field: mathematics
+subfield: [analysis-and-inequalities, combinatorics, geometry-and-packing]
+granularity: record-table
+size:
+  total: 67
+  unit: problems
+  as_of: 2026-09-23
+verification: [score, bound]
+verifier_access: public-code
+status_tracking: per-problem
+submission: [pr, email]
+access: open
+license: Apache-2.0 (code); CC-BY-4.0 (other materials)
+ai_records:
+  - summary: AlphaEvolve was run on all 67 problems, and the prompts, verification code and evolved programs were published for many of them.
+    date: 2025-11-05
+    system: AlphaEvolve
+    level: machine-checked
+    autonomy: human+ai
+    disclosure: [denominator, prompts]
+    evidence:
+      - https://arxiv.org/abs/2511.02864
+      - https://github.com/google-deepmind/alphaevolve_repository_of_problems
+    notes: Tao and Gómez-Serrano supervised problem selection, review and analysis. The repository's status graphic shows how each problem went.
+last_updated: 2026-07-11
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: high
+  rationale: Each notebook ships a scoring function, so a better construction can be checked at once.
+contamination_risk: low

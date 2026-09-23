@@ -1,0 +1,7 @@
+id: cagi
+name: CAGI (Critical Assessment of Genome Interpretation)
+url: https://genomeinterpretation.org/
+field: biology-medicine
+reason: Unchecked (U) in the research.
+to_check:
+  - Current edition, open challenges and data use agreements.

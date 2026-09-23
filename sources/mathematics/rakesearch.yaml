@@ -1,0 +1,26 @@
+id: rakesearch
+name: RakeSearch
+url: https://rake.boincfast.ru/rakesearch/
+alt_urls:
+  - https://github.com/sirzooro/RakeSearch
+maintainer: RakeSearch project (BOINC volunteer computing)
+description: Volunteer computing project that searches for pairs of mutually orthogonal diagonal Latin squares and ranks squares by their orthogonal mates.
+field: mathematics
+subfield: [combinatorics]
+granularity: platform
+size:
+  note: The project reports squares processed one by one; square 69 was completed on 2026-08-07.
+  as_of: 2026-09-23
+verification: [bound]
+verifier_access: none
+status_tracking: per-problem
+submission: [volunteer-compute]
+access: account
+last_updated: 2026-08-07
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: low
+  rationale: Progress comes from donated compute through BOINC, not from submitted solutions.
+contamination_risk: low
+notes: The GitHub repository holds the BOINC application source and was last changed in 2020; the project site is active.

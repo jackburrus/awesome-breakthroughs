@@ -1,0 +1,8 @@
+id: millennium-prize-problems
+name: Millennium Prize Problems
+url: https://www.claymath.org/millennium-problems/
+field: mathematics
+reason: Unchecked (U) in the research.
+to_check:
+  - URL and current status of the seven problems (one solved).
+  - The Clay Mathematics Institute's rules for considering a solution.

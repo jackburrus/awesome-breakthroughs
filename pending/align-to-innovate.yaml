@@ -1,0 +1,7 @@
+id: align-to-innovate
+name: Align to Innovate tournaments
+url: https://alignbio.org/
+field: biology-medicine
+reason: Unchecked (U) in the research.
+to_check:
+  - Whether a protein engineering tournament is running, and its wet-lab scoring.

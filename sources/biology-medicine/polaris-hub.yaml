@@ -1,0 +1,27 @@
+id: polaris-hub
+name: Polaris Hub
+url: https://polarishub.io/
+alt_urls:
+  - https://github.com/polaris-hub/polaris
+maintainer: Polaris (cross-industry drug discovery consortium)
+description: Benchmarking platform for machine learning in drug discovery, with shared datasets, benchmarks and competitions, used through a Python client.
+field: biology-medicine
+subfield: [drug-discovery]
+granularity: platform
+size:
+  note: Number of datasets and benchmarks not stated on the homepage.
+  as_of: 2026-09-23
+verification: [score]
+verifier_access: public-code
+status_tracking: leaderboard
+submission: [api]
+access: account
+license: Apache-2.0 (client)
+last_updated: 2025-08-22
+last_checked: 2026-09-23
+lifecycle: slow
+tractability:
+  level: medium
+  rationale: Evaluation is automatic through the client, but most benchmarks test known data rather than open questions.
+contamination_risk: high
+notes: The client repository was last changed in August 2025, so activity is unclear.

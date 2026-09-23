@@ -1,0 +1,7 @@
+id: dream-challenges
+name: DREAM Challenges
+url: https://dreamchallenges.org/
+field: biology-medicine
+reason: Unchecked (U) in the research, which says few challenges are live.
+to_check:
+  - Which challenges are open, and their Synapse submission terms.

@@ -1,0 +1,8 @@
+id: spherical-codes
+name: Spherical codes (Henry Cohn)
+url: https://www.spherical-codes.org/
+field: mathematics
+reason: Unchecked (U) in the research, and the URL differs between sources.
+to_check:
+  - Which URL is current; the research gives https://cohn.mit.edu/spherical-codes and Tao's related-sites list gives https://www.spherical-codes.org/.
+  - Submission route and whether any entries were found by AI.

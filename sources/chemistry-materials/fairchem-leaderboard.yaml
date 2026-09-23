@@ -1,0 +1,27 @@
+id: fairchem-leaderboard
+name: FAIR Chemistry Leaderboard
+url: https://huggingface.co/spaces/facebook/fairchem_leaderboard
+alt_urls:
+  - https://github.com/facebookresearch/fairchem
+maintainer: Meta FAIR Chemistry
+description: Leaderboards for machine-learned potentials on OMol25 (molecules) and OC20 (catalysts), including energy, forces and downstream chemistry tasks.
+field: chemistry-materials
+subfield: [molecules, catalysis]
+granularity: benchmark
+size:
+  total: 2
+  unit: datasets with leaderboards (OMol25, OC20)
+  as_of: 2026-09-23
+verification: [score]
+verifier_access: public-service
+status_tracking: leaderboard
+submission: [leaderboard-upload]
+access: account
+last_updated: 2026-08-17
+last_checked: 2026-09-23
+lifecycle: active
+tractability:
+  level: medium
+  rationale: Scoring is automatic, but competitive models need large-scale training.
+contamination_risk: low
+notes: A benchmark, not an open problem. Submit a prediction file through the Hugging Face space. fairchem-core 2.22.0 was released on 2026-08-17.

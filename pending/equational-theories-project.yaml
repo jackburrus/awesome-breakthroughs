@@ -1,0 +1,8 @@
+id: equational-theories-project
+name: Equational Theories Project
+url: https://teorth.github.io/equational_theories/
+field: mathematics
+reason: Unchecked (U) in the research. It is also a completed project, so it may belong in a design-models note rather than the list.
+to_check:
+  - Final report figures (the research cites all 22,028,942 implications among 4,694 magma laws, checked in Lean).
+  - Whether it should be listed at all, given that it is closed.

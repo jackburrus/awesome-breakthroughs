@@ -1,0 +1,15 @@
+# Link check settings for .github/workflows/links.yml.
+# pending/ is not checked: its URLs are unconfirmed by definition.
+
+max_retries = 3
+timeout = 30
+accept = ["200..=299", "429"]
+user_agent = "Mozilla/5.0 (compatible; awesome-breakthroughs link check; +https://github.com/jackburrus/awesome-breakthroughs)"
+
+exclude = [
+  # These sites refuse automated requests but work in a browser.
+  "^https://openai\\.com/",
+  "^https://www\\.kaggle\\.com/",
+  # Prefilled GitHub form links.
+  "^https://github\\.com/jackburrus/awesome-breakthroughs/issues/new",
+]

@@ -1,0 +1,25 @@
+id: qaplib
+name: QAPLIB
+url: https://coral.ise.lehigh.edu/data-sets/qaplib/
+maintainer: Peter Hahn and Miguel Anjos (hosted by COR@L, Lehigh)
+description: Quadratic assignment problem instances with best known solutions and lower bounds.
+field: computer-science
+subfield: [combinatorial-optimization]
+granularity: record-table
+size:
+  total: 136
+  unit: instances
+  as_of: 2026-09-23
+  note: The download page says the archives contain 136 instances and 111 solutions.
+verification: [bound]
+verifier_access: none
+status_tracking: per-problem
+submission: [email]
+access: open
+last_checked: 2026-09-23
+lifecycle: stale
+tractability:
+  level: high
+  rationale: A better assignment is trivial to score, but nobody is visibly updating the records.
+contamination_risk: low
+notes: The What's New page was last updated in August 2011, so the listed best known solutions may be out of date.

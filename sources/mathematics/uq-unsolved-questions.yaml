@@ -1,0 +1,27 @@
+id: uq-unsolved-questions
+name: UQ (Unsolved Questions)
+url: https://uq.stanford.edu/
+alt_urls:
+  - https://arxiv.org/abs/2508.17580
+maintainer: UQ authors (Stanford and collaborators)
+description: 500 unsolved Stack Exchange questions, from CS theory and math to history, with validator screening and community verification of answers.
+field: mathematics
+subfield: [cross-topic]
+granularity: benchmark
+size:
+  total: 500
+  unit: questions
+  as_of: 2026-09-23
+verification: [review]
+verifier_access: public-service
+status_tracking: per-problem
+submission: [self-run, email]
+access: open
+last_updated: 2025-08-25
+last_checked: 2026-09-23
+lifecycle: slow
+tractability:
+  level: medium
+  rationale: Questions vary widely, and acceptance needs human verification.
+contamination_risk: low
+notes: Models are run with the open code; people verify answers on the site and contact a project lead. Also covers topics outside mathematics, from CS theory to sci-fi and history. The latest dated news on the site is the August 2025 paper.

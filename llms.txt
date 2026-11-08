@@ -1,6 +1,6 @@
 # awesome-breakthroughs
 
-> Curated, verification-first index of open-problem sources where AI agents can make checkable progress. 34 sources across 7 fields, each checked by hand; latest check 2026-09-23. Data is CC0-1.0.
+> Curated, verification-first index of open-problem sources where AI agents can make checkable progress. 35 sources across 7 fields, each checked by hand; latest check 2026-11-08. Data is CC0-1.0.
 
 Every source records how solutions are verified (formal, score, bound, review, blind or self-reported), whether you can run the verifier yourself (verifier_access), and how to submit. AI claims carry an evidence level (claimed, machine-checked, source-accepted, peer-reviewed) and an autonomy label (autonomous, human+ai, human-led-ai-tools, unknown). Treat anything below source-accepted as unconfirmed.
 
@@ -18,6 +18,7 @@ Every source records how solutions are verified (formal, score, bound, review, b
 - [AlphaProof Nexus results](https://github.com/google-deepmind/alphaproof-nexus-results): Lean proofs found by AlphaProof Nexus, prose proofs, and the full list of attempted Erdős and OEIS problems, including the unsolved ones. Verification: formal. Verifier access: public-code. Submit via: closed. Lifecycle: active.
 - [Busy Beaver Challenge](https://bbchallenge.org/): Collaborative project to decide halting for small Turing machines. BB(5) = 47,176,870 was proved in Rocq; BB(6) holdouts remain. Verification: formal, bound. Verifier access: public-code. Submit via: forum, pr. Lifecycle: active.
 - [CayleyPy Pancake sorting](https://www.kaggle.com/competitions/CayleyPy-pancake): Kaggle community competition to find shorter prefix-reversal (pancake) sorting paths, that is, shorter paths in a Cayley graph. Verification: score. Verifier access: public-service. Submit via: leaderboard-upload. Lifecycle: active.
+- [Clay Millennium Prize Problems](https://www.claymath.org/millennium-problems/): Seven landmark problems; CMI considers solutions after publication, two years, and general acceptance in the global mathematics community. Verification: review. Verifier access: none. Submit via: publish-then-notify. Lifecycle: active.
 - [EinsteinArena](https://einsteinarena.com/): Agent-native platform with open math construction problems, a public Python verifier per problem, live leaderboards and discussion threads. Verification: score, bound. Verifier access: public-service. Submit via: api. Lifecycle: active.
 - [Erdős Problems](https://www.erdosproblems.com/): Database of problems posed by Paul Erdős, with a status for each problem, a per-problem forum and Lean links where formalized. Verification: review, formal. Verifier access: none. Submit via: forum. Lifecycle: active.
 - [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures): Lean 4 statements of open and solved conjectures from Erdős Problems, OEIS, Wikipedia, MathOverflow and papers, tagged by status. Verification: formal. Verifier access: public-code. Submit via: issue, pr. Lifecycle: active.

@@ -1,0 +1,31 @@
+id: millennium-prize-problems
+name: Clay Millennium Prize Problems
+url: https://www.claymath.org/millennium-problems/
+alt_urls:
+  - https://www.claymath.org/millennium-problems/rules/
+maintainer: Clay Mathematics Institute
+description: Seven landmark problems; CMI considers solutions after publication, two years, and general acceptance in the global mathematics community.
+field: mathematics
+subfield: [analysis, algebra, geometry, number-theory, topology, mathematical-physics, complexity-theory]
+granularity: database
+size:
+  total: 7
+  open: 6
+  solved: 1
+  unit: problems
+  as_of: 2026-11-08
+  note: The official page lists six under Active/Unsolved and Poincaré under Solved.
+verification: [review]
+verifier_access: none
+status_tracking: per-problem
+submission: [publish-then-notify]
+access: open
+license: No open content license stated.
+last_checked: 2026-11-08
+lifecycle: active
+tractability:
+  level: low
+  rationale: These are classic deep problems without lightweight decompositions or public automated checkers.
+contamination_risk: low
+notes: >-
+  CMI does not accept direct submissions. Prize consideration requires publication in a qualifying outlet, two years elapsed, and general acceptance in the global mathematics community.

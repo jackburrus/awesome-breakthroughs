@@ -24,7 +24,7 @@ Sources are never ranked by how many problems AI has solved.
 
 ## Contents
 
-- [Mathematics](#mathematics) (18)
+- [Mathematics](#mathematics) (19)
 - [Computer science](#computer-science) (4)
 - [Biology and medicine](#biology-and-medicine) (6)
 - [Chemistry and materials](#chemistry-and-materials) (2)
@@ -47,6 +47,7 @@ No source in Physics and astronomy has passed the checks yet. Suggestions are we
 | [AlphaProof Nexus results](https://github.com/google-deepmind/alphaproof-nexus-results) | Lean proofs found by AlphaProof Nexus, prose proofs, and the full list of attempted Erdős and OEIS problems, including the unsolved ones. | formal | public-code | closed | active | 2026-09-23 |
 | [Busy Beaver Challenge](https://bbchallenge.org/) | Collaborative project to decide halting for small Turing machines. BB(5) = 47,176,870 was proved in Rocq; BB(6) holdouts remain. | formal, bound | public-code | forum, pr | active | 2026-09-23 |
 | [CayleyPy Pancake sorting](https://www.kaggle.com/competitions/CayleyPy-pancake) | Kaggle community competition to find shorter prefix-reversal (pancake) sorting paths, that is, shorter paths in a Cayley graph. | score | public-service | leaderboard-upload | active | 2026-09-23 |
+| [Clay Millennium Prize Problems](https://www.claymath.org/millennium-problems/) | Seven landmark problems; CMI considers solutions after publication, two years, and general acceptance in the global mathematics community. | review | none | publish-then-notify | active | 2026-11-08 |
 | [EinsteinArena](https://einsteinarena.com/) | Agent-native platform with open math construction problems, a public Python verifier per problem, live leaderboards and discussion threads. | score, bound | public-service | api | active | 2026-09-23 |
 | [Erdős Problems](https://www.erdosproblems.com/) | Database of problems posed by Paul Erdős, with a status for each problem, a per-problem forum and Lean links where formalized. | review, formal | none | forum | active | 2026-09-23 |
 | [Formal Conjectures](https://github.com/google-deepmind/formal-conjectures) | Lean 4 statements of open and solved conjectures from Erdős Problems, OEIS, Wikipedia, MathOverflow and papers, tagged by status. | formal | public-code | issue, pr | active | 2026-09-23 |
@@ -138,7 +139,7 @@ Claims that an AI system made progress, grouped by source and listed by date. Th
 
 ## Pending
 
-25 candidates are waiting in [`pending/`](pending/) until someone confirms their URL and key facts. Each file lists what to check.
+24 candidates are waiting in [`pending/`](pending/) until someone confirms their URL and key facts. Each file lists what to check.
 
 - **AIMO Prize** (AI and machine learning): Unchecked (U) in the research.
 - **Align to Innovate tournaments** (Biology and medicine): Unchecked (U) in the research.
@@ -155,7 +156,6 @@ Claims that an AI system made progress, grouped by source and listed by date. Th
 - **La Jolla Covering Repository** (Mathematics): Marked S in the research, but the URL did not respond on 2026-09-23 (connection failed on HTTPS and HTTP).
 - **manYPoints** (Mathematics): Unchecked (U) in the research.
 - **Matrix multiplication exponent and small tensor ranks** (Computer science): Unchecked (U) in the research, and there is no single maintained registry to point to.
-- **Millennium Prize Problems** (Mathematics): Unchecked (U) in the research.
 - **Narrow admissible tuples** (Mathematics): Unchecked (U) in the research.
 - **OEIS (On-Line Encyclopedia of Integer Sequences)** (Mathematics): The research marked the URL unchecked (U) and its AI note secondhand (S).
 - **Open Problem Garden** (Mathematics): Unchecked (U) in the research, which also says it is likely unmaintained.

@@ -24,7 +24,7 @@ Sources are never ranked by how many problems AI has solved.
 
 ## Contents
 
-- [Mathematics](#mathematics) (18)
+- [Mathematics](#mathematics) (19)
 - [Computer science](#computer-science) (4)
 - [Biology and medicine](#biology-and-medicine) (6)
 - [Chemistry and materials](#chemistry-and-materials) (2)
@@ -54,6 +54,7 @@ No source in Physics and astronomy has passed the checks yet. Suggestions are we
 | [FrontierMath: Open Problems](https://epoch.ai/frontiermath/open-problems) | Unsolved research problems with bespoke programmatic verifiers, tiered by significance from moderately interesting to breakthrough. | score | paid | form | active | 2026-09-23 |
 | [Game of Sloanes](https://github.com/gnikylime/GameofSloanes) | Leaderboard of best known packings of lines in complex projective space (Grassmannian frames), with open conjectures on optimality. | bound | none | pr | active | 2026-09-23 |
 | [HorizonMath](https://github.com/ewang26/HorizonMath) | Mostly unsolved problems in computational and applied mathematics, each with an automatic verifier or best-known baseline. | score, bound | public-code | self-run | active | 2026-09-23 |
+| [Kourovka Notebook](https://arxiv.org/abs/1401.0300) | Editorially maintained collection of numbered open problems in group theory, with solution updates and an archive of solved problems. | review | none | email | active | 2026-11-23 |
 | [Leaps in Bounds](https://leapsinbounds.org/) | Collaborative record of historical progress on bounds for mathematical constants, with browsing, plots and downloadable structured data. | bound, review | none | issue, forum, email | active | 2026-09-23 |
 | [OEIS Open](https://github.com/epoch-research/LeanOpenProblems) | Open-source harness that runs any language model on 492 Lean-formalized OEIS conjectures, plus a 100-problem Lite subset. | formal | public-code | self-run | active | 2026-09-23 |
 | [Optimization Constants in Mathematics](https://github.com/teorth/optimizationproblems) | Best known upper and lower bounds on constants from variational problems and inequalities, with a changelog of recent progress. | bound, review | none | pr | active | 2026-09-23 |
@@ -138,7 +139,7 @@ Claims that an AI system made progress, grouped by source and listed by date. Th
 
 ## Pending
 
-25 candidates are waiting in [`pending/`](pending/) until someone confirms their URL and key facts. Each file lists what to check.
+24 candidates are waiting in [`pending/`](pending/) until someone confirms their URL and key facts. Each file lists what to check.
 
 - **AIMO Prize** (AI and machine learning): Unchecked (U) in the research.
 - **Align to Innovate tournaments** (Biology and medicine): Unchecked (U) in the research.
@@ -151,7 +152,6 @@ Claims that an AI system made progress, grouped by source and listed by date. Th
 - **DREAM Challenges** (Biology and medicine): Unchecked (U) in the research, which says few challenges are live.
 - **Equational Theories Project** (Mathematics): Unchecked (U) in the research. It is also a completed project, so it may belong in a design-models note rather than the list.
 - **Kaggle, DrivenData, HeroX and XPRIZE** (Other lists): Unchecked (U) in the research, which says to list individual research-grade competitions rather than whole platforms.
-- **Kourovka Notebook** (Mathematics): Unchecked (U) in the research.
 - **La Jolla Covering Repository** (Mathematics): Marked S in the research, but the URL did not respond on 2026-09-23 (connection failed on HTTPS and HTTP).
 - **manYPoints** (Mathematics): Unchecked (U) in the research.
 - **Matrix multiplication exponent and small tensor ranks** (Computer science): Unchecked (U) in the research, and there is no single maintained registry to point to.

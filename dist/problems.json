@@ -1,6 +1,6 @@
 {
   "schema_version": "1",
-  "data_as_of": "2026-09-23",
+  "data_as_of": "2026-11-23",
   "license": "CC0-1.0",
   "homepage": "https://github.com/jackburrus/awesome-breakthroughs",
   "sources": [
@@ -678,6 +678,44 @@
       "contamination_risk": "none",
       "notes": "Some validators need SageMath.",
       "file": "sources/mathematics/horizonmath.yaml"
+    },
+    {
+      "id": "kourovka-notebook",
+      "name": "Kourovka Notebook",
+      "url": "https://arxiv.org/abs/1401.0300",
+      "alt_urls": [
+        "https://kourovkanotebookorg.wordpress.com/2026/11/02/november-2026-update-for-the-21st-edition/"
+      ],
+      "maintainer": "E. I. Khukhro and V. D. Mazurov (editors)",
+      "description": "Editorially maintained collection of numbered open problems in group theory, with solution updates and an archive of solved problems.",
+      "field": "mathematics",
+      "subfield": [
+        "group-theory"
+      ],
+      "granularity": "database",
+      "size": {
+        "as_of": "2026-11-02",
+        "note": "The 21st edition adds 150 problems. The editors do not give a current total of unsolved problems in this update."
+      },
+      "verification": [
+        "review"
+      ],
+      "verifier_access": "none",
+      "status_tracking": "per-problem",
+      "submission": [
+        "email"
+      ],
+      "access": "open",
+      "last_updated": "2026-11-02",
+      "last_checked": "2026-11-23",
+      "lifecycle": "active",
+      "tractability": {
+        "level": "medium",
+        "rationale": "Difficulty varies across the numbered questions, and solutions require mathematical review."
+      },
+      "contamination_risk": "low",
+      "notes": "The editors invite solutions by email and mark unconfirmed AI-proposed solutions separately. Those problems remain unsolved.",
+      "file": "sources/mathematics/kourovka-notebook.yaml"
     },
     {
       "id": "leaps-in-bounds",
@@ -1715,18 +1753,6 @@
         "Whether it should be listed at all, given that it is closed."
       ],
       "file": "pending/equational-theories-project.yaml"
-    },
-    {
-      "id": "kourovka-notebook",
-      "name": "Kourovka Notebook",
-      "url": "https://arxiv.org/abs/1401.0300",
-      "field": "mathematics",
-      "reason": "Unchecked (U) in the research.",
-      "to_check": [
-        "Latest edition and arXiv revision (the research cites the 21st edition, 2026, and revision v45 of 2026-07-03).",
-        "How solutions are reported to the editors (E. I. Khukhro and V. D. Mazurov)."
-      ],
-      "file": "pending/kourovka-notebook.yaml"
     },
     {
       "id": "la-jolla-covering-repository",
